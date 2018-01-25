@@ -1,3 +1,1 @@
-# tells Git to ignore the _site directory that Jekyll automatically generates each time you commit
-
 _site/

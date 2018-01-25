@@ -1,11 +1,30 @@
----
-layout: default
-permalink: /404.html
----
-
-<div class="page-not-found">
-    <!-- <img src="{{ '/assets/img/logo/MvvmCross-404.png' | relative_url }}" alt="MvvmCross 404" role="img" aria-label="MvvmCross 404">  YOY YO YO YOY  -->
-    <h1>404</h1>
-    <p><strong>Page not found :(</strong></p>
-    <p>The site configured at this address does not contain the requested file.</p>
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+        <!-- link to main stylesheet -->
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+            </head>
+    <body>
+        <img src="{{ '/assets/images/logo.jpg' | relative_url }}">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/interests">Interests</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="container">
+                
+                {{ content }}
+                
+            </div><!-- /.container -->
+            <footer>
+                <ul>
+                    <li><a href="mailto:anupya@hotmail.ca">EMAIL ME</a></li>
+                    <li><a href="https://github.com/anupya">MY GITHUB</a></li>
+                </ul>
+            </footer>
+            </body>
+</html>

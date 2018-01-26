@@ -6,8 +6,7 @@ h1 {
     font-size: 60px;
     font-stretch: extra-expanded;
     font-color: black;
-    animation-name: logoAppears;
-    animation-duration: 2s;
+    animation: logoAppears 2s;
     background-color: white;
     text-align: center;
     letter-spacing: expanded;

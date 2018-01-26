@@ -22,6 +22,7 @@ h1.border {
     padding-bottom: 100px;
     padding-left: 10px;
     padding-right: 10px;
+    border-top: 10px dotted #82ECFF;
     border-bottom: 10px dotted #82ECFF;
     bottom: 50%; /* should make the border stretch 50% of the way */
 }
@@ -95,7 +96,7 @@ p.border {
     padding-bottom: 100px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 2px solid #000000;
+    border: 0.2px solid #000000;
 }
 
 /* IMAGES */

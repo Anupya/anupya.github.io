@@ -27,6 +27,7 @@ body {
 }
 
 /* LINKS */
+/* HOME, WORK, PLAY */
 nav ul {
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
     font-weight: 100px;
@@ -36,6 +37,7 @@ nav ul {
     padding: 10px;
     float: right;
 }
+/* CONTACT ME */
 footer ul {
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
     font-weight: 50px;
@@ -43,14 +45,6 @@ footer ul {
     font-stretch: expanded;
     color: #;
     padding: 10px;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-nav ul li:hover, footer ul li:hover {
-    font-size: 30px;
-    text-decoration: none;
 }
 a {
     color: #000000;

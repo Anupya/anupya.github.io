@@ -73,10 +73,12 @@ footer ul {
 /* URLS */
 a {
     text-decoration: none;
-    color: #000000;
+    font-color: #000000;
+    background-color: #82ECFF;
 }
 a:hover {
     color: #82ECFF;
+    font-size: larger;
 }
 a:active {
     color: #82ECFF;

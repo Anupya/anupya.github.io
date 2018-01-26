@@ -32,7 +32,7 @@ footer {
 
 /* PARAGRAPHS AND BODY */
 p {
-    font-family:'Bookman', 'Times New Roman', 'Serif';
+    font-family:'Bookman Old Style', 'Times New Roman', 'Serif';
     font-weight: 100px;
     font-size: 16px;
     font-color: black;
@@ -104,7 +104,6 @@ img.logo {
 img {
     width: 40px;
     height: 40px;
-    float: right;
     display: inline-block;
 }
 

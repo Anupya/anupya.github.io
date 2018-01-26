@@ -24,7 +24,7 @@ body {
 }
 
 /* LINKS */
-nav ul, footer ul {
+nav ul {
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
     font-style: normal;
     font-weight: 100px;
@@ -33,6 +33,15 @@ nav ul, footer ul {
     color: blue;
     padding: 10px;
     float: right;
+}
+footer ul {
+    font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
+    font-style: normal;
+    font-weight: 100px;
+    font-size: 20px;
+    font-stretch: expanded;
+    color: blue;
+    padding: 10px;
 }
 nav ul li, footer ul li {
     display: inline;

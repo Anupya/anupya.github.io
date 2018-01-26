@@ -17,6 +17,7 @@ h1.border {
     padding-left: 10px;
     padding-right: 10px;
     border-bottom: 10px dotted #82ECFF;
+    bottom: 50%; /* should make the border stretch 50% of the way */
 }
 footer {
     padding: 10px;

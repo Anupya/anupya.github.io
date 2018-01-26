@@ -30,38 +30,34 @@ nav ul {
     font-weight: 100px;
     font-size: 20px;
     font-stretch: expanded;
-    color: blue;
+    color: #82ECFF;
     padding: 10px;
     float: right;
-    padding: 10px;
 }
 footer ul {
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
-    font-style: normal;
-    font-weight: 100px;
-    font-size: 20px;
+    font-weight: 50px;
+    font-size: 10px;
     font-stretch: expanded;
-    color: blue;
+    color: #;
     padding: 10px;
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+nav ul li:hover, footer ul li:hover {
+    font-size: 14px;
+}
 a {
-    text-decoration: none;
-    color: #999;
+    color: #000000;
     }
 a:hover {
     cursor: pointer;
-    color: #000000;
-    text-decoration: underline;
-}
-a:visited {
-    color: #999;
+    color: #82ECFF;
 }
 a:active {
-    color: #006000;
+    color: #82ECFF;
 }
 
 /* BORDERS */
@@ -75,5 +71,7 @@ p.borderMain {
 img.logo {
     float: left;
     z-index: -1;
-    position: relative;
+    left: 20px;
+    top: 20px;
+    position: absolute;
 }

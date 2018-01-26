@@ -5,16 +5,16 @@ h1 {
     font-weight: 100px;
     font-size: 60px;
     font-stretch: extra-expanded;
-    font-color: white;
+    font-color: black;
     animation-name: logoAppears;
     animation-duration: 1.5s;
-    background-color: black;
+    background-color: white;
 }
 footer {
     border-top: 1px solid #000000;
     padding: 10px;
     font-size: 14px;
-    font-color: white;
+    font-color: black;
     text-decoration: none;
     background-color: #82ECFF;
 }
@@ -24,8 +24,8 @@ p {
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
     font-weight: 100px;
     font-size: 16px;
-    color: white;
-    background-color: black
+    font-color: black;
+    background-color: white
     }
 body {
     margin: 60px;
@@ -38,7 +38,7 @@ nav ul {
     font-weight: 100px;
     font-size: 20px;
     font-stretch: expanded;
-    color: #82ECFF;
+    font-color: #82ECFF;
     padding: 10px;
     float: right;
     list-style: none;
@@ -50,7 +50,7 @@ footer ul {
     font-weight: 50px;
     font-size: 10px;
     font-stretch: expanded;
-    color: #;
+    font-color: #;
     padding: 10px;
     list-style: none;
     text-decoration: none;
@@ -89,6 +89,6 @@ img.resize {
 
 /* ANIMATIONS */
 @keyframes logoAppears {
-    from {font-color: black;}
-    to {font-color: white;}
+    from {font-color: white;}
+    to {font-color: black;}
 }

@@ -11,7 +11,7 @@ h1 {
     font-weight: 100px;
     font-size: 60px;
     font-stretch: extra-expanded;
-    font-color: --black;
+    font-color: black;
     animation: logoAppears 2s;
     background-color: white;
     text-align: center;
@@ -80,11 +80,9 @@ footer ul {
 a {
     text-decoration: none;
     font-color: #000000;
-    background-color: #82ECFF;
 }
 a:hover {
     color: #82ECFF;
-    font-size: larger;
 }
 a:active {
     color: #82ECFF;
@@ -121,6 +119,9 @@ img {
     to {font-color: white;}
 }
 
+/* COOL BORDER ANIMATION #7 in
+https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937
+*/
 
 /*
 $anime-time: 8s;

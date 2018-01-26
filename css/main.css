@@ -9,11 +9,14 @@ h1 {
     animation-name: logoAppears;
     animation-duration: 1.5s;
     background-color: white;
+    text-align: center;
+    letter-spacing: expanded;
 }
 footer {
-    border-top: 1px solid #000000;
     padding: 10px;
     font-size: 14px;
+    height: 60px;
+    width: auto;
     font-color: black;
     text-decoration: none;
     background-color: #82ECFF;
@@ -45,6 +48,7 @@ nav ul {
     text-decoration: none;
     text-align: center;
     display: inline; /* makes the items appear horizontally */
+    background-color: #B8B8B8;
 }
 /* CONTACT ME */
 footer ul {
@@ -85,10 +89,11 @@ img.logo {
     position: absolute;
 }
 */
-img.social {
-    height: 10px;
-    width: 10px;
+ul.social {
     text-align: center;
+    display: inline;
+    max-width: 100%;
+    height: auto;
 }
 
 /* ANIMATIONS */

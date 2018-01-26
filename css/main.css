@@ -36,6 +36,8 @@ nav ul {
     color: #82ECFF;
     padding: 10px;
     float: right;
+    list-style: none;
+    text-decoration: none;
 }
 /* CONTACT ME */
 footer ul {
@@ -45,6 +47,8 @@ footer ul {
     font-stretch: expanded;
     color: #;
     padding: 10px;
+    list-style: none;
+    text-decoration: none;
 }
 a {
     color: #000000;

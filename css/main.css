@@ -21,15 +21,17 @@ p {
 body {
     margin: 60px auto;
     width: 70%;
-    letter-spacing: 5px;
 }
 
 /* LINKS */
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+    font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
+    font-style: normal;
+    font-weight: 100px;
+    font-size: 20px;
+    font-stretch: expanded;
+    color: blue;
+    padding: 10px;
 }
 nav ul li, footer ul li {
     display: inline;
@@ -44,16 +46,16 @@ a:hover {
     color: #000000;
     text-decoration: underline;
 }
-a.visited {
+a:visited {
     color: #999;
 }
-a.active {
+a:active {
     color: #006000;
 }
 
 /* BORDERS */
-.borderMain {
+p.borderMain {
     border: 1px solid;
     border-color: #009900;
-    padding: 10px;
+    padding: 15px;
 }

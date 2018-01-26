@@ -7,7 +7,7 @@ h1 {
     font-stretch: extra-expanded;
     font-color: white;
     animation-name: logoAppears;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     background-color: black;
 }
 footer {
@@ -16,7 +16,7 @@ footer {
     font-size: 14px;
     font-color: white;
     text-decoration: none;
-    background-color: black;
+    background-color: #82ECFF;
 }
 
 /* PARAGRAPHS AND BODY */
@@ -82,9 +82,9 @@ img.logo {
     position: absolute;
 }
 */
-img.social {
-    height: 50px;
-    width: 50px;
+img.resize {
+    height: 10px;
+    width: 10px;
 }
 
 /* ANIMATIONS */

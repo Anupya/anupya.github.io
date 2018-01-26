@@ -3,7 +3,7 @@ h1 {
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
     font-style: normal;
     font-weight: 100px;
-    font-size: 20px;
+    font-size: 40px;
     font-stretch: expanded;
     color: black;
 }
@@ -15,9 +15,10 @@ footer {
 
 /* PARAGRAPHS AND BODY */
 p {
-    font-size: 12pt;
-    line-height: 12pt;
-    color: #000000;
+    font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
+    font-weight: 100px;
+    font-size: 16px;
+    color: black;
     }
 body {
     margin: 60px;
@@ -26,13 +27,13 @@ body {
 /* LINKS */
 nav ul {
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
-    font-style: normal;
     font-weight: 100px;
     font-size: 20px;
     font-stretch: expanded;
     color: blue;
     padding: 10px;
     float: right;
+    padding: 10px;
 }
 footer ul {
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
@@ -73,4 +74,6 @@ p.borderMain {
 /* IMAGES */
 img.logo {
     float: left;
+    z-index: -1;
+    position: relative;
 }

@@ -82,10 +82,10 @@ a {
     font-color: #000000;
 }
 a:hover {
-    color: #82ECFF;
+    font-color: #82ECFF;
 }
 a:active {
-    color: #82ECFF;
+    font-color: #000000;
 }
 
 /* BORDERS */

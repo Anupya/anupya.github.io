@@ -56,7 +56,7 @@ nav ul {
     float: right;
     list-style: none;
     text-align: center;
-    display: inline; /* makes the items appear horizontally */
+    display: inline-block; /* makes the items appear horizontally */
     background-color: #B8B8B8;
 }
 /* CONTACT ME */
@@ -68,7 +68,7 @@ footer ul {
     font-color: #;
     padding: 10px;
     list-style: none;
-    display: inline;
+    display: inline-block;
     height: 60px;
     width: auto;
 }

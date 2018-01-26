@@ -8,19 +8,19 @@ h1 {
     color: black;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    border-top: 1px solid #000000;
+    padding: 3px;
+    font-size: 12px;
 }
 
 /* PARAGRAPHS AND BODY */
 p {
     font-size: 12pt;
     line-height: 12pt;
-    color: #333;
+    color: #000000;
     }
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin: 60px;
 }
 
 /* LINKS */
@@ -32,6 +32,7 @@ nav ul, footer ul {
     font-stretch: expanded;
     color: blue;
     padding: 10px;
+    float: right;
 }
 nav ul li, footer ul li {
     display: inline;
@@ -58,4 +59,9 @@ p.borderMain {
     border: 1px solid;
     border-color: #009900;
     padding: 15px;
+}
+
+/* IMAGES */
+img.logo {
+    float: left;
 }

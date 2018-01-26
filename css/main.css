@@ -74,7 +74,6 @@ img.logo {
 }
 */
 img.social {
-    -webkit-filter: grayscale;
     height: 10px;
     width: 10px;
 }

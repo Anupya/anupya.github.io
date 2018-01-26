@@ -29,6 +29,9 @@ p {
     font-size: 16px;
     font-color: black;
     background-color: white
+    padding-left, padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 30px;
     }
 body {
     margin: 60px;
@@ -98,6 +101,6 @@ ul.social {
 
 /* ANIMATIONS */
 @keyframes logoAppears {
-    from {font-color: white;}
-    to {font-color: black;}
+    from {font-color: black;}
+    to {font-color: white;}
 }

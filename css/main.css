@@ -125,8 +125,10 @@ img {
 /* BACKGROUND ANIMATION - SNOW */
 
 .hero {
-    background-image: radial-gradient(50% 176%, #253854 80%, #061922 100%);
-    position: relative;
+    background-image: #82ECFF;
+    position: fixed;
+    top: 0;
+    left: 0;
     overflow: hidden;
     display: flex;
     justify-content: center;

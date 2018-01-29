@@ -1,2 +1,3 @@
 name: Anupya Pamidimukkala
 markdown: kramdown
+exclude: [node_modules]

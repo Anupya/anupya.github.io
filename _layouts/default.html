@@ -4,21 +4,16 @@
         <!-- <title>{{ page.title }}</title> -->
         <!-- link to main stylesheet -->
         <link rel="stylesheet" type="text/css" href="/css/main.css">
-            </head>
+    </head>
     <body>
         <!--<img src="/assets/images/logo.jpg" id="logo"> -->
-            <div class="container">
+        {% include navbar.html %}
+        <div class="container">
                 
                 <!-- copy-pastes contents of the file that starts with layout: default -->
-                {{ content }}
+            {{ content }}
                 
-            </div>
-            <footer>
-                <ul class="social">
-                    <li><a href="mailto:anupya@hotmail.ca" target="_blank"><img src="/assets/images/mail.png"></a></li>
-                    <li><a href="https://linkedin.com/in/anupya" target="_blank"><img src="/assets/images/linkedin.png"></a></li>
-                    <li><a href="https://github.com/anupya" target="_blank"><img src="/assets/images/github.png"></a></li>
-                </ul>
-            </footer>
-            </body>
+        </div>
+        {% include footer.html %}
+        </body>
 </html>

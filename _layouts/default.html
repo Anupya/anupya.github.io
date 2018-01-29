@@ -8,12 +8,10 @@
     <body>
         <!--<img src="/assets/images/logo.jpg" id="logo"> -->
         {% include navbar.html %}
-        <div class="container">
+        
+        <!-- copy-pastes contents of the file that starts with layout: default -->
+        {{ content }}
                 
-                <!-- copy-pastes contents of the file that starts with layout: default -->
-            {{ content }}
-                
-        </div>
         {% include footer.html %}
     </body>
 </html>

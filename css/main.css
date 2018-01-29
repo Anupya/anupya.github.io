@@ -50,6 +50,7 @@ p {
 body {
     margin: 60px;
     background-color: #82ECFF;
+    overflow: scroll;
 }
 
 /* LINKS */

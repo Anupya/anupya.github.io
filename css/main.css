@@ -112,6 +112,10 @@ img {
     text-align: center;
 }
 
+img:hover {
+    color: white;
+}
+
 /*
 @keyframes logoAppears {
     from {font-color: black;}

@@ -9,11 +9,12 @@ h1 {
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
     font-style: normal;
     font-weight: 100px;
+    font-color: white;
     font-size: 60px;
     font-stretch: extra-expanded;
     font-color: black;
     animation: logoAppears 2s;
-    background-color: white;
+    background-color: black;
     text-align: center;
     letter-spacing: expanded;
 }
@@ -74,6 +75,7 @@ footer ul {
     list-style: none;
     height: 60px;
     width: auto;
+    text-align: center;
 }
 /* URLS */
 a {
@@ -113,7 +115,6 @@ img {
     text-align: center;
 }
 
-/* ANIMATIONS */
 @keyframes logoAppears {
     from {font-color: black;}
     to {font-color: white;}

@@ -6,7 +6,7 @@
 
 /* HEADERS AND FOOTERS */
 h1 {
-    display: none;
+    opacity: 0;
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
     font-style: normal;
     font-weight: 100px;
@@ -52,15 +52,15 @@ p {
     background-color: white;
 }
 body {
-    display: none;
+    opacity: 0;
     margin: 60px;
     background-color: #82ECFF;
     overflow: scroll;
-}
-.bio {
     -webkit-animation-delay: fadein 1.2s forwards;
     -moz-animation-delay: fadein 1.2s forwards;
     animation-delay: fadein 1.2s forwards;
+}
+.bio {
 }
 /* LINKS */
 /* HOME, WORK, PLAY */

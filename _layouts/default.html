@@ -3,15 +3,17 @@
     <head>
         <!-- <title>{{ page.title }}</title> -->
         <!-- link to main stylesheet -->
+        <h1 class="border">ANUPYA PAMIDIMUKKALA</h1>
         <link rel="stylesheet" type="text/css" href="/css/main.css">
     </head>
+
     {% include background.html %}
     <body>
         <!--<img src="/assets/images/logo.jpg" id="logo"> -->
         <!-- copy-pastes contents of the file that starts with layout: default -->
-        {{ content }}
-
         {% include navbar.html %}
+        
+        {{ content }}
                 
         {% include footer.html %}
     </body>

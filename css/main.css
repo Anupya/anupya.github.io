@@ -9,7 +9,7 @@ h1 {
     opacity: 0;
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
     font-style: normal;
-    font-weight: 100;
+    font-weight: 700;
     font-size: 60px;
     font-stretch: extra-expanded;
     background-color: black;
@@ -20,7 +20,6 @@ h1 {
     -webkit-animation-delay: 0.7s;
     animation: fadein 0.7s forwards;
     animation-delay: 0.7s;
-    z-index: -1;
 }
 .myName { /* ANUPYA PAMIDIMUKKALA */
     padding-top: 30px;
@@ -52,16 +51,30 @@ p {
     padding: 10px;
     background-color: white;
 }
-body {
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
     opacity: 0;
     margin: 60px;
-    background-color: white; /* ACTUAL BACKGROUND */
     overflow: scroll;
     animation: fadein 1.5s forwards;
     animation-delay: 1.5s
+    width: 100wh;
+    height: 90vh;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
 }
-.bio {
-}
+
 /* LINKS */
 /* HOME, WORK, PLAY */
 nav ul {
@@ -104,7 +117,7 @@ nav ul li::before, nav ul li::after {
   height: 100%;
 }
 nav ul li::before, nav ul li:after {
-  border: 2px solid transparent;
+  border: 4px solid transparent;
   width: 0;
   height: 0;
 }

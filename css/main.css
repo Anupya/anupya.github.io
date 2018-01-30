@@ -18,9 +18,9 @@ h1 {
     font-color: white;
     text-align: center;
     letter-spacing: expanded;
-    -webkit-animation-delay: fadein 0.7s;
-    -moz-animation-delay: fadein 0.7s;
-    animation-delay: fadein 0.7s;
+    -webkit-animation-delay: fadein 0.7s forwards;
+    -moz-animation-delay: fadein 0.7s forwards;
+    animation-delay: fadein 0.7s forwards;
     z-index: -1;
 }
 .myName { /* ANUPYA PAMIDIMUKKALA */
@@ -39,9 +39,9 @@ footer ul {
     font-color: black;
     text-decoration: none;
     text-align: center;
-    -webkit-animation-delay: fadein 1.2s;
-    -moz-animation-delay: fadein 1.2s;
-    animation-delay: fadein 1.2s;
+    -webkit-animation-delay: fadein 1.2s forwards;
+    -moz-animation-delay: fadein 1.2s forwards;
+    animation-delay: fadein 1.2s forwards;
 }
 
 /* PARAGRAPHS AND BODY */
@@ -59,9 +59,9 @@ body {
     overflow: scroll;
 }
 .bio {
-    -webkit-animation-delay: fadein 1.2s;
-    -moz-animation-delay: fadein 1.2s;
-    animation-delay: fadein 1.2s;
+    -webkit-animation-delay: fadein 1.2s forwards;
+    -moz-animation-delay: fadein 1.2s forwards;
+    animation-delay: fadein 1.2s forwards;
 }
 /* LINKS */
 /* HOME, WORK, PLAY */
@@ -73,9 +73,9 @@ nav ul {
     padding: 20px;
     list-style: none;
     text-align: center;
-    -webkit-animation-delay: fadein 1.7s;
-    -moz-animation-delay: fadein 1.7s;
-    animation-delay: fadein 1.7s;
+    -webkit-animation-delay: fadein 1.7s forwards;
+    -moz-animation-delay: fadein 1.7s forwards;
+    animation-delay: fadein 1.7s forwards;
 }
 li {
     display: inline-block;
@@ -84,9 +84,7 @@ li {
 /* CONTACT ME */
 .social {
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
-    font-weight: 50px;
     font-size: 10px;
-    font-color: black;
     padding: 10px;
     list-style: none;
     height: 60px;

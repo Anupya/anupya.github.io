@@ -22,22 +22,22 @@ h1 {
     -moz-animation-delay: 0.7s;
     animation-delay: 0.7s;
 }
-.myName { /* h1.border */
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 5px dotted #FFFFFF;
+.myName { /* ANUPYA PAMIDIMUKKALA */
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 5px solid #FFFFFF;
 }
-}
-footer {
+
+footer ul {
     padding: 10px;
     font-size: 14px;
     height: 60px;
     width: auto;
     font-color: black;
     text-decoration: none;
-    display: inline-block;
+    text-align: center;
     -webkit-animation-delay: 1.2s;
     -moz-animation-delay: 1.2s;
     animation-delay: 1.2s;
@@ -106,28 +106,17 @@ a:active {
 
 /* BORDERS */
 p.border {
-    padding-top: 20px;
-    padding-bottom: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     border: 0.2px solid #000000;
 }
 
 /* IMAGES */
-/*
-img.logo {
-    float: left;
-    z-index: -1;
-    left: 20px;
-    top: 20px;
-    position: absolute;
-}
-*/
 img {
     width: 40px;
     height: 40px;
     display: inline-block;
     text-align: center;
+    float: center;
 }
 
 img:hover {

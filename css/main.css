@@ -27,7 +27,6 @@ h1 {
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;
-    z-index: 1;
 }
 
 footer ul {
@@ -38,10 +37,10 @@ footer ul {
     color: black;
     text-decoration: none;
     text-align: center;
-    -webkit-animation: fadein 1.2s forwards;
-    -webkit-animation-delay: 1.2s;
-    animation: fadein 1.2s forwards;
-    animation-delay: 1.2s;
+    -webkit-animation: fadein 1.5s forwards;
+    -webkit-animation-delay: 1.5s;
+    animation: fadein 1.5s forwards;
+    animation-delay: 1.5s;
 }
 
 /* PARAGRAPHS AND BODY */
@@ -58,30 +57,31 @@ body {
     margin: 60px;
     background-color: white; /* ACTUAL BACKGROUND */
     overflow: scroll;
-    animation: fadein 1.2s forwards;
-    animation-delay: 1.2s
+    animation: fadein 1.5s forwards;
+    animation-delay: 1.5s
 }
 .bio {
 }
 /* LINKS */
 /* HOME, WORK, PLAY */
 nav ul {
+    opacity: 0;
     position: relative;
     bottom: 140px;
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
     font-weight: 300;
     font-size: 20px;
     color: black;
-    padding: 20px;
+    padding: 5px;
     list-style: none;
     text-align: center;
-    animation: fadein 1.7s forwards;
-    animation-delay: 1.7s
+    animation: fadein 2s forwards;
+    animation-delay: 2s
 }
     
 nav ul li {
     display: inline-block;
-    padding: 20px;
+    padding: 5px;
     width: 20px;
     transition: color 0.25s;
     border: 0;
@@ -117,20 +117,20 @@ nav ul li::after {
   right: 0;
 }
 nav ul li:hover { /* the border changes color to this */
-  color: #82ECFF;
+  color: white;
 }
 nav ul li:hover::before, nav ul li:hover::after {
   width: 100%;
   height: 100%;
 }
 nav ul li:hover::before {
-  border-top-color: #82ECFF;
-  border-right-color: #82ECFF;
+  border-top-color: white;
+  border-right-color: white;
   transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
 nav ul li:hover::after {
-  border-bottom-color: #82ECFF;
-  border-left-color: #82ECFF;
+  border-bottom-color: white;
+  border-left-color: white;
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 
@@ -143,6 +143,9 @@ nav ul li:hover::after {
     height: 60px;
     width: auto;
     text-align: center;
+}
+.social li {
+    display: inline-block;
 }
 /* URLS */
 a {
@@ -170,10 +173,6 @@ img {
     display: inline-block;
     text-align: center;
     float: center;
-}
-
-img:hover {
-    fill: white;
 }
 
 /*

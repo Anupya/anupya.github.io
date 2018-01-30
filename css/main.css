@@ -89,7 +89,7 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
 nav ul {
     opacity: 0;
     position: relative;
-    bottom: 100px; /* distance from the bottom */
+    bottom: 120px; /* distance from the bottom */
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     font-weight: 300;
     font-size: 14px;
@@ -176,11 +176,11 @@ a {
     color: #82ECFF;
     display: block;
 }
-a svg:hover {
+a .svg:hover {
     fill: white;
     transition: 200ms ease-out;
 }
-a svg:active {
+a .svg:active {
     fill: white;
     transition: 200ms ease-out;
 }

@@ -176,12 +176,12 @@ a {
     text-decoration: none;
     color: #82ECFF;
 }
-a svg:hover {
-    fill: #82ECFF;
+.svg:hover {
+    fill: white;
     transition: 200ms ease-out;
 }
-a svg:active {
-    fill: #82ECFF;
+.svg:active {
+    fill: white;
     transition: 200ms ease-out;
 }
 

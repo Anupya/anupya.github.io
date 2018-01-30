@@ -76,11 +76,68 @@ nav ul {
     -moz-animation-delay: fadein 1.7s forwards;
     animation-delay: fadein 1.7s forwards;
 }
-li {
+    
+nav ul li {
     display: inline-block;
     padding: 20px;
     width: 20px;
+    transition: color 0.25s;
+    border: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 1em;
+    padding: 1em 2em;
+    -webkit-box-shadow: inset 0 0 0 2px #f45e61;
+            box-shadow: inset 0 0 0 2px #f45e61;
+    color: #f45e61;
+    font-size: inherit;
+    font-weight: 700;
+    position: relative;
+    vertical-align: middle;
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
 }
+nav ul li::before, nav ul li::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+nav ul li::before, nav ul li:after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+nav ul li::before {
+  top: 0;
+  left: 0;
+}
+nav ul li::after {
+  bottom: 0;
+  right: 0;
+}
+nav ul li:hover {
+  color: #60daaa;
+}
+nav ul li:hover::before, nav ul li:hover::after {
+  width: 100%;
+  height: 100%;
+}
+nav ul li:hover::before {
+  border-top-color: #60daaa;
+  border-right-color: #60daaa;
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+nav ul li:hover::after {
+  border-bottom-color: #60daaa;
+  border-left-color: #60daaa;
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
 /* CONTACT ME */
 .social {
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';

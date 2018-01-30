@@ -50,7 +50,9 @@ p {
     color: black;
     padding: 10px;
     background-color: white;
+    z-index: 1;
 }
+
 @keyframes Gradient {
     0% {
         background-position: 0% 50%
@@ -73,6 +75,7 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;
+    z-index: -1;
 }
 
 /* LINKS */
@@ -172,11 +175,6 @@ a svg:hover {
 a svg:active {
     fill: #82ECFF;
     transition: 200ms ease-out;
-}
-
-/* BORDERS */
-p.border {
-    padding: 20px;
 }
 
 /* IMAGES */

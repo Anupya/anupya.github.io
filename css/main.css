@@ -78,7 +78,8 @@ nav ul {
 }
 li {
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
+    width: 20px;
 }
 /* CONTACT ME */
 .social {
@@ -96,10 +97,10 @@ a {
     color: white;
 }
 a:hover {
-    color: #82ECFF;
+    font-size: 120%;
 }
 a:active {
-    color: #82ECFF;
+    font-size: 120%;
 }
 
 /* BORDERS */
@@ -131,7 +132,7 @@ img:hover {
 /* BACKGROUND ANIMATION - SNOW */
 
 .hero {
-    position: relative;
+    position: fixed;
     overflow: hidden;
     display: flex;
     justify-content: center;

@@ -125,7 +125,7 @@ nav ul li::before, nav ul li::after {
   height: 100%;
 }
 nav ul li::before, nav ul li:after {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   width: 0;
   height: 0;
   color: white;
@@ -144,6 +144,7 @@ nav ul li:hover { /* the border changes color to this */
 nav ul li:hover::before, nav ul li:hover::after {
   width: 100%;
   height: 100%;
+  color: white;
 }
 nav ul li:hover::before {
   border-top-color: white;

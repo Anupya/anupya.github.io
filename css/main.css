@@ -151,7 +151,7 @@ nav ul li:hover::before {
 nav ul li:hover::after {
   border-bottom-color: white;
   border-left-color: white;
-  transition: border-color 0s ease-out 0.4s, width 0.2s ease-out 0.4s, height 0.2s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.2s, width 0.1s ease-out 0.2s, height 0.1s ease-out 0.5s;
 }
 
 /* CONTACT ME */

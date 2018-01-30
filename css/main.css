@@ -24,7 +24,7 @@ h1 {
 }
 .myName { /* ANUPYA PAMIDIMUKKALA */
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -57,6 +57,7 @@ p {
     z-index: 1;
     animation: fadein 1.5s forwards;
     animation-delay: 1.5s;
+    text-align: center;
 }
 
 @keyframes Gradient {
@@ -124,9 +125,10 @@ nav ul li::before, nav ul li::after {
   height: 100%;
 }
 nav ul li::before, nav ul li:after {
-  border: 3px solid transparent;
+  border: 1px solid transparent;
   width: 0;
   height: 0;
+  color: white;
 }
 nav ul li::before {
   top: 0;

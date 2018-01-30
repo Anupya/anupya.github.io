@@ -52,7 +52,7 @@ p {
     background-color: white;
     z-index: 1;
     animation: fadein 1.5s forwards;
-    animation-delay: 1.5s
+    animation-delay: 1.5s;
 }
 
 @keyframes Gradient {
@@ -70,7 +70,7 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
     opacity: 0;
     margin: 60px;
     overflow: scroll;
-    width: 100wh;
+    width: 100vh;
     height: 90vh;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
@@ -92,7 +92,7 @@ nav ul {
     list-style: none;
     text-align: center;
     animation: fadein 2s forwards;
-    animation-delay: 2s
+    animation-delay: 2s;
 }
     
 nav ul li {

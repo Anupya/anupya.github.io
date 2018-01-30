@@ -4,6 +4,9 @@
     --grey: #B8B8B8;
 */
 
+div {
+    display: none;
+}
 /* HEADERS AND FOOTERS */
 h1 {
     font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
@@ -26,6 +29,7 @@ h1 {
     padding-right: 10px;
     border: 5px dotted #FFFFFF;
 }
+}
 footer {
     padding: 10px;
     font-size: 14px;
@@ -34,6 +38,9 @@ footer {
     font-color: black;
     text-decoration: none;
     display: inline-block;
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    animation-delay: 1.2s;
 }
 
 /* PARAGRAPHS AND BODY */
@@ -62,9 +69,12 @@ nav ul {
     font-weight: 100px;
     font-size: 20px;
     font-color: #82ECFF;
-    padding: 10px;
+    padding: 20px;
     list-style: none;
     text-align: center;
+    -webkit-animation-delay: 1.7s;
+    -moz-animation-delay: 1.7s;
+    animation-delay: 1.7s;
 }
 li {
     display: inline-block;
@@ -85,7 +95,7 @@ li {
 /* URLS */
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 a:hover {
     color: #82ECFF;
@@ -211,67 +221,8 @@ div {
 https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937
 */
 
+
 /*
-$anime-time: 8s;
-
-$box-size: 200px;
-$clip-distance: .05;
-$clip-size: $box-size * (1 + $clip-distance * 2);
-$path-width: 2px;
-
-$main-color: #69ca62;
-
-$codepen-logo-path: url('//blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png');
-
-%full-fill {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.bb {
-  @extend %full-fill;
-  width: 200px;
-  height: 200px;
-  margin: auto;
-  color: #000000;
-  box-shadow: inset 0 0 0 1px rgba(#000000, .5);
-
-  &::before,
-  &::after {
-    @extend %full-fill;
-    content: '';
-    z-index: -1;
-    margin: -1 * $clip-distance * 100%;
-    box-shadow: inset 0 0 0 $path-width; 
-    animation: clipMe $anime-time linear infinite;
-  }
-
-  &::before {
-    animation-delay: $anime-time * -.5;
-  }
-
-  // for debug
-  &:hover {
-    &::after,
-    &::before {
-      background-color: rgba(#f00, .3);
-    }
-  }
-
-}
-
-@keyframes clipMe {
-  0%, 100% {clip: rect(0px, $clip-size, $path-width, 0px); }
-  25% {clip: rect(0px, $path-width, $clip-size, 0px); }
-  50% {clip: rect($clip-size - $path-width, $clip-size, $clip-size, 0px); }
-  75% {clip: rect(0px, $clip-size, $clip-size, $clip-size - $path-width); }
-}
-
-/////
-
 html,
 body {
   height: 100%;

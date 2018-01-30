@@ -29,6 +29,7 @@ h1 {
 }
 
 footer ul {
+    opacity: 0;
     padding: 10px;
     font-size: 14px;
     height: 60px;
@@ -44,6 +45,7 @@ footer ul {
 
 /* PARAGRAPHS AND BODY */
 p {
+    opacity: 0;
     font-family:'Bookman Old Style', 'Times New Roman', 'Serif';
     font-weight: 300;
     font-size: 14px;
@@ -67,7 +69,6 @@ p {
     }
 }
 body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
-    opacity: 0;
     margin: 60px;
     overflow: scroll;
     width: 100vh;
@@ -120,7 +121,7 @@ nav ul li::before, nav ul li::after {
   height: 100%;
 }
 nav ul li::before, nav ul li:after {
-  border: 3px dotted transparent;
+  border: 3px solid transparent;
   width: 0;
   height: 0;
 }

@@ -5,6 +5,9 @@
 */
 
 /* HEADERS AND FOOTERS */
+* {
+    box-sizing: border-box;
+}
 h1 {
     opacity: 0;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
@@ -103,7 +106,6 @@ nav ul li {
     width: 80px;
     transition: color 0.25s;
     border: 0;
-    box-sizing: border-box;
     margin: 0px;
     padding: 6px;
     box-shadow: inset 0 0 0 2px #82ECFF;
@@ -172,6 +174,7 @@ nav ul li:hover::after {
 a {
     text-decoration: none;
     color: #82ECFF;
+    display: block;
 }
 a svg:hover {
     fill: white;
@@ -272,23 +275,4 @@ img {
 
 /* COOL BORDER ANIMATION #7 in
 https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937
-*/
-
-
-/*
-html,
-body {
-  height: 100%;
-}
-
-body {
-  position: relative;
-  background-color: #0f222b;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 */

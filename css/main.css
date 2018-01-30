@@ -17,9 +17,9 @@ h1 {
     text-align: center;
     letter-spacing: 2px;
     -webkit-animation: fadein 0.7s forwards;
-    -webkit-animation-delay: 0.7s
+    -webkit-animation-delay: 0.7s;
     animation: fadein 0.7s forwards;
-    animation-delay: 0.7s
+    animation-delay: 0.7s;
     z-index: -1;
 }
 .myName { /* ANUPYA PAMIDIMUKKALA */
@@ -39,9 +39,9 @@ footer ul {
     text-decoration: none;
     text-align: center;
     -webkit-animation: fadein 1.2s forwards;
-    -webkit-animation-delay: 1.2s
+    -webkit-animation-delay: 1.2s;
     animation: fadein 1.2s forwards;
-    animation-delay: 1.2s
+    animation-delay: 1.2s;
 }
 
 /* PARAGRAPHS AND BODY */
@@ -49,7 +49,7 @@ p {
     font-family:'Bookman Old Style', 'Times New Roman', 'Serif';
     font-weight: 100;
     font-size: 14px;
-    font-color: black;
+    color: black;
     padding: 10px;
     background-color: white;
 }
@@ -74,7 +74,8 @@ nav ul {
     padding: 20px;
     list-style: none;
     text-align: center;
-    animation-delay: fadein 1.7s forwards;
+    animation: fadein 1.7s forwards;
+    animation-delay: 1.7s
 }
     
 nav ul li {
@@ -166,6 +167,7 @@ img {
     height: 40px;
     display: inline-block;
     text-align: center;
+    float: center;
 }
 
 img:hover {
@@ -174,8 +176,8 @@ img:hover {
 
 /*
 @keyframes logoAppears {
-    from {font-color: black;}
-    to {font-color: white;}
+    from {color: black;}
+    to {color: white;}
 }
 */
 

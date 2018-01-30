@@ -7,11 +7,10 @@
 /* HEADERS AND FOOTERS */
 h1 {
     opacity: 0;
-    font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
+    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 100;
     font-size: 60px;
-    font-stretch: extra-expanded;
     background-color: black;
     color: white;
     align-content: center;
@@ -48,7 +47,7 @@ footer ul {
 /* PARAGRAPHS AND BODY */
 p {
     opacity: 0;
-    font-family:'Bookman Old Style', 'Times New Roman', 'Serif';
+    font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
     font-weight: 300;
     font-size: 14px;
     color: black;
@@ -89,7 +88,7 @@ nav ul {
     opacity: 0;
     position: relative;
     bottom: 110px; /* distance from the bottom */
-    font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
+    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     font-weight: 300;
     font-size: 14px;
     color: black;
@@ -158,7 +157,7 @@ nav ul li:hover::after {
 
 /* CONTACT ME */
 .social {
-    font-family:'Century Gothic', 'Roboto', 'Arial', 'Sans-Serif';
+    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     font-size: 10px;
     padding: 10px;
     list-style: none;
@@ -175,11 +174,11 @@ a {
     text-decoration: none;
     color: #82ECFF;
 }
-img .svg:hover {
+a svg:hover {
     fill: white;
     transition: 200ms ease-out;
 }
-img .svg:active {
+a svg:active {
     fill: white;
     transition: 200ms ease-out;
 }

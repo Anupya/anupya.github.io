@@ -15,7 +15,7 @@
 }
 /* HEADERS AND FOOTERS */
 h1 {
-    opacity: 0;
+    opacity: 1;
     max-width: 800px;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     font-style: normal;
@@ -35,7 +35,7 @@ h1 {
 }
 
 footer ul {
-    opacity: 0;
+    opacity: 1;
     padding: 10px;
     font-size: 14px;
     height: 60px;
@@ -48,7 +48,7 @@ footer ul {
 
 /* PARAGRAPHS AND BODY */
 p {
-    opacity: 0;
+    opacity: 1;
     font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
     font-weight: 300;
     font-size: 14px;
@@ -102,7 +102,7 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
 }
 
 h2 {
-    opacity: 0;
+    opacity: 1;
     max-width: 800px;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     font-style: normal;
@@ -116,7 +116,7 @@ h2 {
 }
 
 h3 {
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     margin: auto;
     max-width: 400px;
@@ -158,7 +158,7 @@ h3 {
 }
 
 #menu-icon {
-    opacity: 0;
+    opacity: 1;
     position: fixed;
     width: 35px;
     height: 5px;

@@ -13,10 +13,6 @@
 /* HEADERS AND FOOTERS */
 h1 {
     opacity: 0;
-<<<<<<< HEAD
-    position: fixed;
-=======
->>>>>>> parent of a2ea4ea... pamidimukkala
     max-width: 800px;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     font-style: normal;
@@ -30,35 +26,13 @@ h1 {
     animation: fadein 0.7s forwards;
     animation-delay: 0.7s;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-h1.anupya { 
-=======
 .myName { /* ANUPYA PAMIDIMUKKALA */
->>>>>>> parent of a2ea4ea... pamidimukkala
-=======
-.anupya { 
->>>>>>> parent of e704ef7... fix the headings and such
     padding-top: 30px;
     padding-bottom: 0px;
     padding-left: 30px;
     padding-right: 30px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-h1.pamidimukkala {
-=======
-.pamidimukkala {
->>>>>>> parent of e704ef7... fix the headings and such
-    font-stretch: ultra-expanded;
-    padding-top: 100px;
-    padding-bottom: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-=======
 
->>>>>>> parent of a2ea4ea... pamidimukkala
 footer ul {
     opacity: 0;
     padding: 10px;
@@ -98,7 +72,6 @@ p {
     }
 }
 body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
-    opacity: 0;
     overflow: scroll;
     width: 100vh;
     height: 90vh;
@@ -115,7 +88,7 @@ nav ul {
     position: relative;
     bottom: 120px; /* distance from the bottom */
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
-    font-weight: 100;
+    font-weight: 300;
     font-size: 14px;
     color: black;
     list-style: none;

@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
-	{% include navbar.html %}
+	<head>
+		{% include_relative _includes/navbar.html %}
+		<h2> WORK </h2>
+		<h3> Organizations </h3>
+	</head>
 	<body>
 	    <p> IN PROGRESS: work.html </p>
 	    <p> IMAGE </p>
@@ -11,6 +15,28 @@
 	    <p> IMAGE </p>
 	    <p> IMAGE </p>
 	</body>
-
-    {% include footer.html %}
+	<head>
+		<h3> Projects </h3>
+	</head>
+	<body>
+		<p> IMAGE </p>
+	    <p> IMAGE </p>
+	    <p> IMAGE </p>
+	    <p> IMAGE </p>
+	    <p> IMAGE </p>
+	    <p> IMAGE </p>
+	</body>
+	<head>
+		<h3>Awards</h3>
+	</head>
+	<body>
+		<p> IMAGE </p>
+	    <p> IMAGE </p>
+	    <p> IMAGE </p>
+	    <p> IMAGE </p>
+	    <p> IMAGE </p>
+	    <p> IMAGE </p>
+	</body>
+	{% include_relative _includes/navbar.html %}
+    {% include_relative _includes/footer.html %}
 </html>

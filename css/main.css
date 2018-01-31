@@ -99,6 +99,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     width: 80px;
+    margin: 20px;
     transition: color 0.25s;
     padding: 6px;
     box-shadow: inset 0 0 0 2px black; /* this is the border */
@@ -150,7 +151,9 @@ nav ul li:hover::after {
   border-left-color: white;
   transition: border-color 0s ease-out 0.2s, width 0.1s ease-out 0.2s, height 0.1s ease-out 0.5s;
 }
-
+.mainNavButtons li {
+    display: block;
+}
 /* CONTACT ME */
 .social {
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
@@ -161,10 +164,12 @@ nav ul li:hover::after {
     width: auto;
 }
 .social svg {
-    fill: white;
     transition: 200ms ease-out;
     width: 25px;
     height: 25px;
+}
+.social svg:hover {
+    fill:white;
 }
 .social li {
     display: inline-block;

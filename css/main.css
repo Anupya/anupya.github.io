@@ -122,9 +122,7 @@ h2 {
 
 h3 {
     opacity: 0;
-    position: absolute;
     margin: auto;
-    max-width: 400px;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     font-style: normal;
     font-weight: 100;
@@ -132,7 +130,8 @@ h3 {
     color: white;
     letter-spacing: 2px;
     animation: fadein 1s forwards;
-    animation-delay: 1s;    
+    animation-delay: 1s;  
+    background-color: black;  
 }
 
 .organization-container {
@@ -162,6 +161,9 @@ h3 {
     max-width: 60%
 }
 
+button {
+    background-color: none;
+}
 #menu-icon {
     opacity: 0;
     position: fixed;
@@ -174,10 +176,10 @@ h3 {
     animation-delay: 2s;
 }
 #menu-icon img {
-    height: 40px;
-    width: 40px;
+    height: 25px;
+    width: 25px;
 }
-#menu-icon:hover {
+#menu-icon img:hover {
     fill: white;
 }
 #menu {

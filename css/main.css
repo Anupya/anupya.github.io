@@ -160,6 +160,10 @@ nav ul li:hover::after {
     height: 60px;
     width: auto;
 }
+.social svg {
+    fill: white;
+    transition: 200ms ease-out;
+}
 .social li {
     display: inline-block;
     padding: 10px;
@@ -179,16 +183,7 @@ a:hover {
 img {
     width: 25px;
     height: 25px;
-    fill: white;
-    transition: 200ms ease-out;
 }
-
-/*
-@keyframes logoAppears {
-    from {color: black;}
-    to {color: white;}
-}
-*/
 
 /* BACKGROUND ANIMATION - SNOW */
 

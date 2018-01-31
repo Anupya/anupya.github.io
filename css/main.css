@@ -27,14 +27,15 @@ h1 {
     animation: fadein 0.7s forwards;
     animation-delay: 0.7s;
 }
-.anupya { 
+h1 .anupya { 
     padding-top: 30px;
     padding-bottom: 0px;
     padding-left: 30px;
     padding-right: 30px;
 }
-.pamidimukkala {
+h1 .pamidimukkala {
     font-stretch: ultra-expanded;
+    font-size: 25px;
     padding-top: 100px;
     padding-bottom: 0px;
     padding-left: 30px;

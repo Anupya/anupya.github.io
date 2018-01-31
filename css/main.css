@@ -109,6 +109,7 @@ nav ul li {
     font-weight: 300;
     position: relative;
     transition: color 0.1s;
+    color: #82ECFF;
     background-color: black;
 }
 nav ul li::before, nav ul li::after {
@@ -181,7 +182,6 @@ nav ul li:hover::after {
 /* URLS */
 a {
     text-decoration: none;
-    color: #82ECFF;
     display: block;
 }
 a:hover {
@@ -305,7 +305,7 @@ h3 {
     background: black;
 }
 
-.organization-container .boxes li{
+.organization-container.boxes li{
     width: 200px;
     height: 200px;
     margin: auto;
@@ -316,6 +316,12 @@ h3 {
         transform 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.02s, 
         opacity 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.02s;
     cursor: pointer;
+    list-style: none
+}
+
+.organization-container.boxes img{
+    height: 100px;
+    width: 100px;
 }
 /* COOL BORDER ANIMATION #7 in
 https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937

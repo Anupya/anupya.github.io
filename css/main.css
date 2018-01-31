@@ -305,9 +305,9 @@ h3 {
     background: black;
 }
 
-.organization-container.boxes li{
-    width: 200px;
-    height: 200px;
+.organization-container.boxes ul li{
+    width: 100px;
+    height: 100px;
     margin: auto;
     display: inline-block;
     background-color: white;
@@ -319,7 +319,7 @@ h3 {
     list-style: none
 }
 
-.organization-container.boxes img{
+.organization-container.boxes ul li a img{
     height: 100px;
     width: 100px;
 }

@@ -298,8 +298,8 @@ h3 {
 }
 
 .organization-container {
-    width: 1000px;
-    height: 1000px;
+    width: auto;
+    height: 500px;
     margin: 50px auto;
     padding-top: 75px;
     background: black;
@@ -310,7 +310,7 @@ h3 {
     height: 200px;
     margin: auto;
     display: inline-block;
-    background-color: black;
+    background-color: white;
     transform: translateY(0) scale(1);
     transition: all 0.2s ease 0s, 
         transform 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.02s, 

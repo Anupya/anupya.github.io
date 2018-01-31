@@ -71,7 +71,8 @@ p {
     }
 }
 @keyframes fadein {
-    from { opacity: 0; } to {opacity: 1; }
+    0%   { opacity: 0; } 
+    100% { opacity: 1; }
 }
 
 body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
@@ -165,16 +166,19 @@ h3 {
     opacity: 0;
     position: fixed;
     width: 35px;
-    height: 5px;
+    height: 35px;
     top: 20px;
     right: 40px;
-    background-color: black;
     margin: 6px 0;
     animation: fadein 2s forwards;
     animation-delay: 2s;
 }
+#menu-icon img {
+    height: 40px;
+    width: 40px;
+}
 #menu-icon:hover {
-    background-color: white;
+    fill: white;
 }
 #menu {
     display: none;

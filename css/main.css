@@ -11,6 +11,7 @@
     margin-right: auto;
     justify-content: center;
     flex-wrap: wrap;
+    cursor: default;
 }
 /* HEADERS AND FOOTERS */
 h1 {
@@ -23,10 +24,8 @@ h1 {
     background-color: black;
     color: white;
     letter-spacing: 2px;
-    -webkit-animation: fadein 0.7s forwards;
-    -webkit-animation-delay: 0.7s;
-    animation: fadein 0.7s forwards;
-    animation-delay: 0.7s;
+    animation: fadein 0.4s forwards;
+    animation-delay: 0.4s;
 }
 .myName { /* ANUPYA PAMIDIMUKKALA */
     padding-top: 30px;
@@ -43,8 +42,6 @@ footer ul {
     width: auto;
     color: black;
     text-decoration: none;
-    -webkit-animation: fadein 1.5s forwards;
-    -webkit-animation-delay: 1.5s;
     animation: fadein 1.5s forwards;
     animation-delay: 1.5s;
 }
@@ -87,7 +84,9 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
 /* HOME, WORK, PLAY */
 nav ul {
     opacity: 0;
-    position: relative;
+    position: fixed
+    top: 0px;
+    right: 0px;
     bottom: 120px; /* distance from the bottom */
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     font-weight: 300;
@@ -149,15 +148,15 @@ nav ul li:hover::before {
   border-top-color: white;
   border-right-color: white;
   transition: width 0.2s ease-out, height 0.2s ease-out 0.2s;
+  color: white;
 }
 nav ul li:hover::after {
   border-bottom-color: white;
   border-left-color: white;
   transition: border-color 0s ease-out 0.2s, width 0.1s ease-out 0.2s, height 0.1s ease-out 0.5s;
+  color: white;
 }
-.mainNavButtons li {
-    display: block;
-}
+
 /* CONTACT ME */
 .social {
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
@@ -183,86 +182,13 @@ nav ul li:hover::after {
 a {
     text-decoration: none;
     display: block;
+    color: #82ECFF;
 }
-a:hover {
-  color: white;
+a:hover + .hidden, .hidden:hover{
+  display: block;
 }
 a:active {
   color: white;
-}
-
-/* BACKGROUND ANIMATION - SNOW */
-
-.hero {
-  position: relative;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.snow {
-  position: absolute;
-  min-width: 100vw;
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.snow .svg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-#snow-top-layer {
-  will-change: transform;
-  -webkit-transform: translateY(-768px);
-          transform: translateY(-768px);
-  -webkit-animation: fall 22.5s infinite linear;
-          animation: fall 22.5s infinite linear;
-}
-
-#snow-bottom-layer {
-  will-change: transform;
-  -webkit-transform: translateY(-768px);
-          transform: translateY(-768px);
-  -webkit-animation: fall 45s infinite linear;
-          animation: fall 45s infinite linear;
-}
-
-@-webkit-keyframes fall {
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes fall {
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-/* FADE IN */
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
 
 h2 {
@@ -274,10 +200,8 @@ h2 {
     font-size: 60px;
     color: black;
     letter-spacing: 2px;
-    -webkit-animation: fadein 0.7s forwards;
-    -webkit-animation-delay: 0.7s;
-    animation: fadein 0.7s forwards;
-    animation-delay: 0.7s;
+    animation: fadein 0.4s forwards;
+    animation-delay: 0.4s;
     margin-top: 300px;
 }
 
@@ -292,8 +216,6 @@ h3 {
     font-size: 20px;
     color: white;
     letter-spacing: 2px;
-    -webkit-animation: fadein 1s forwards;
-    -webkit-animation-delay:1s;
     animation: fadein 1s forwards;
     animation-delay: 1s;    
 }

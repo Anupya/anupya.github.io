@@ -171,6 +171,10 @@ a {
     display: block;
 }
 
+a:hover {
+  color: white;
+}
+
 /* IMAGES */
 img {
     width: 25px;

@@ -272,24 +272,24 @@ h2 {
     font-style: normal;
     font-weight: 100;
     font-size: 60px;
-    background-color: white;
     color: black;
     letter-spacing: 2px;
     -webkit-animation: fadein 0.7s forwards;
     -webkit-animation-delay: 0.7s;
     animation: fadein 0.7s forwards;
     animation-delay: 0.7s;
+    margin-top: 300px;
 }
 
 h3 {
     opacity: 0;
+    position: relative;
     max-width: 400px;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     font-style: normal;
     font-weight: 100;
-    font-size: 40px;
-    background-color: white;
-    color: black;
+    font-size: 20px;
+    color: white;
     letter-spacing: 2px;
     -webkit-animation: fadein 1s forwards;
     -webkit-animation-delay:1s;

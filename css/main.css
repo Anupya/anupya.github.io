@@ -13,7 +13,7 @@
 /* HEADERS AND FOOTERS */
 h1 {
     opacity: 0;
-    width: 800px;
+    max-width: 800px;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     font-style: normal;
     font-weight: 100;
@@ -174,8 +174,10 @@ a {
     color: #82ECFF;
     display: block;
 }
-
 a:hover {
+  color: white;
+}
+a:active {
   color: white;
 }
 

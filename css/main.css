@@ -200,7 +200,7 @@ h3 {
     animation-delay: 2s;
     cursor: pointer;
 }
-#menu-icon:hover {
+#menu-icon img:hover {
     opacity: 0.8;
 }
 #menu-icon div {

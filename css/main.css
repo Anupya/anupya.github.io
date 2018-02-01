@@ -33,13 +33,9 @@ h1 {
     padding-right: 30px;
 }
 
-footer ul {
+footer {
     opacity: 0;
-    padding: 10px;
     font-size: 14px;
-    height: 60px;
-    width: auto;
-    color: black;
     position: absolute;
     bottom: 100px;
     text-decoration: none;
@@ -138,7 +134,7 @@ h3 {
 }
 
 .organization-container {
-    position: absolute;
+    position: relative;
     top: 500px;
     width: auto;
     height: 500px;

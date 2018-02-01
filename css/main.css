@@ -84,7 +84,6 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
 /* CONTACT ME */
 .social {
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
-    font-size: 10px;
     padding: 10px;
     list-style: none;
     height: 60px;
@@ -186,10 +185,77 @@ h3 {
     margin: 6px 0;
     animation: fadein 2s forwards;
     animation-delay: 2s;
+    cursor: pointer;
 }
 #menu-icon:hover {
-    display: block;
+    opacity: 0.8;
 }
+#menu-icon div {
+    display: block;
+    float: left;
+    clear: both;
+    height: 4px;
+    width: 40px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+#menu-icon div ul:nth-child(1) {
+    margin-top: 10px;
+    z-index: 9;
+}
+#menu-icon div ul:nth-child(1) {
+    margin-top: 25px;
+    z-index: 9;
+}
+#menu-icon div ul:nth-child(1) {
+    margin-top: 40px;
+    z-index: 9;
+}
+#menu {
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    height: 0;
+    width: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(38,84,133,0.54);
+    border-radius: 50%;
+    z-index: 18;
+    overflow: hidden;
+}
+#menu li {
+    display: block;
+    float: right;
+    clear: both;
+    height: auto;
+    margin-right: -160px;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#menu li:first-child {
+    margin-top: 180px;
+}
+#menu li:nth-child(1) {
+    transition-delay: 0.05s;
+}
+#menu li:nth-child(2) {
+    transition-delay: 0.15s;
+}
+#menu li:nth-child(3) {
+    transition-delay: 0.2s;
+}
+#menu li a {
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    float: left;
+    line-height: 40px;
+}
+
+/*
 #menu-icon img {
     height: 25px;
     width: 25px;
@@ -232,7 +298,7 @@ h3 {
     color: white;
 }
 
-
+*/
 
 /* COOL BORDER ANIMATION #7 in
 https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937

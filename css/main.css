@@ -36,8 +36,10 @@ footer{
     opacity: 0;
     font-size: 14px;
     bottom: 100px;
-    position: relative;
-    top: 150px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     text-decoration: none;
     animation: fadein 1.5s forwards;
     animation-delay: 1.5s;

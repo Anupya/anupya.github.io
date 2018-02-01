@@ -13,6 +13,9 @@
 }
 /* HEADERS AND FOOTERS */
 h1 {
+    position: absolute;
+    top: 150px;
+    left: 300px;
     opacity: 0;
     max-width: 800px;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
@@ -46,6 +49,9 @@ footer{
 
 /* PARAGRAPHS AND BODY */
 p {
+    position: absolute;
+    top: 500px;
+    left: 200px;
     opacity: 0;
     font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
     font-weight: 300;

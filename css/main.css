@@ -12,6 +12,7 @@
     justify-content: center;
     flex-wrap: wrap;
     cursor: default;
+    display: flex;
 }
 /* HEADERS AND FOOTERS */
 h1 {

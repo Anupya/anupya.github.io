@@ -137,6 +137,7 @@ h1 {
     letter-spacing: 2px;
     animation: fadein 0.4s forwards;
     animation-delay: 0.4s;
+    margin-top: 500px;
 }
 
 h3 {
@@ -238,13 +239,12 @@ h3 {
     top: 50px;
     right: 0;
     position: absolute;
-    border-radius: 50%;
-    z-index: 18;
-    overflow: hidden;
     text-decoration: none
 }
 #menu-icon li {
-    display: none;
+    opacity: 1;
+    display: block;
+    list-style: none;
 }
 /*
 #menu {

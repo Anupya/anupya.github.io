@@ -33,11 +33,12 @@ h1 {
     padding-right: 30px;
 }
 
-footer {
+footer{
     opacity: 0;
     font-size: 14px;
-    position: absolute;
     bottom: 100px;
+    position: relative;
+    top: 150px;
     text-decoration: none;
     animation: fadein 1.5s forwards;
     animation-delay: 1.5s;

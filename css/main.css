@@ -7,8 +7,6 @@
 * {
     box-sizing: border-box;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: center;
     flex-wrap: wrap;
     cursor: default;
@@ -85,6 +83,8 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
 canvas {
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     animation: Gradient 15s ease infinite;
+    width: 1000px;
+    height: 1000px;
     background-size: 400% 400% 
 }
 

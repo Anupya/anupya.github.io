@@ -232,16 +232,17 @@ h3 {
 #menu {
     display: none;
     top: 50px;
-    right: 50px;
+    right: 42px;
     position: fixed;
     text-decoration: none
 }
 #menu-icon li {
-    opacity: 1;
     display: block;
     list-style: none;
     text-align: right;
     padding-top: 10px;
+    width: 80px;
+    cursor: pointer;
 }
 /*
 #menu {

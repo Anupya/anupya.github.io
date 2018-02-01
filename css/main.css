@@ -200,10 +200,10 @@ h3 {
     animation-delay: 2s;
     cursor: pointer;
 }
-#menu-icon img:hover {
-    opacity: 0.8;
+#menu-icon:hover {
+    opacity: 0.3;
 }
-#menu-icon div {
+#menu-icon:hover div {
     display: block;
     float: left;
     clear: both;
@@ -215,15 +215,15 @@ h3 {
     overflow: hidden;
     transition: all 0.4s ease;
 }
-#menu-icon div ul:nth-child(1) {
+#menu-icon img div ul:nth-child(1) {
     margin-top: 10px;
     z-index: 9;
 }
-#menu-icon div ul:nth-child(1) {
+#menu-icon img div ul:nth-child(1) {
     margin-top: 25px;
     z-index: 9;
 }
-#menu-icon div ul:nth-child(1) {
+#menu-icon img div ul:nth-child(1) {
     margin-top: 40px;
     z-index: 9;
 }

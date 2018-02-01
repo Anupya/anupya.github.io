@@ -188,7 +188,7 @@ h3 {
 
 }
 
-#menu-icon {
+#menu-icon img{
     opacity: 0;
     position: fixed;
     width: 25px;

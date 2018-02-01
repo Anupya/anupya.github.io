@@ -191,7 +191,7 @@ h3 {
 
 }
 
-#menu-icon img{
+#menu-icon img {
     opacity: 0;
     position: fixed;
     width: 25px;
@@ -220,25 +220,17 @@ h3 {
     color: white;
 }
 #menu {
-    top: 100%;
-    left: 0;
+    top: 50px;
+    right: 0;
     position: absolute;
     background-color: rgba(38,84,133,0.54);
     border-radius: 50%;
     z-index: 18;
     overflow: hidden;
+    text-decoration: none
 }
 
 /*
-#menu-icon img {
-    height: 25px;
-    width: 25px;
-    display: block;
-}
-#menu-icon img:hover {
-    fill: white;
-    display: block;
-}
 #menu {
     display: none;
     position: absolute;

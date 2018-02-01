@@ -144,15 +144,11 @@ h3 {
 }
 
 .organization-container li{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: auto;
     display: inline-block;
-    background-color: white;
-    transform: translateY(0) scale(1);
-    transition: all 0.2s ease 0s, 
-        transform 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.02s, 
-        opacity 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.02s;
+    background-color: red;
     cursor: pointer;
     list-style: none
 }
@@ -204,6 +200,7 @@ button:hover {
 }
 #menu-icon img:hover {
     fill: white;
+    display: block;
 }
 #menu {
     display: none;

@@ -228,7 +228,7 @@ h3 {
     display: block;
     text-decoration: none;
     color: black;
-    font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
+    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     font-size: 20;
 }
 #menu-icon a:hover {
@@ -237,7 +237,7 @@ h3 {
 #menu {
     display: none;
     top: 50px;
-    right: 0;
+    right: 50px;
     position: absolute;
     text-decoration: none
 }
@@ -245,6 +245,7 @@ h3 {
     opacity: 1;
     display: block;
     list-style: none;
+    text-align: right;
 }
 /*
 #menu {

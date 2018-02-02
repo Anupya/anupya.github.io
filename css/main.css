@@ -43,8 +43,8 @@ footer{
     bottom: 0px;
     left: 0px;
     text-decoration: none;
-    animation: fadein 1.5s forwards;
-    animation-delay: 1.5s;
+    animation: fadein 2.5s forwards;
+    animation-delay: 2.5s;
 }
 
 /* PARAGRAPHS AND BODY */
@@ -62,8 +62,8 @@ footer{
     padding: 20px;
     margin: 0 auto;
     background-color: white;
-    animation: fadein 1.5s forwards;
-    animation-delay: 1.5s;
+    animation: fadein 2s forwards;
+    animation-delay: 2s;
 }
 
 @keyframes Gradient {
@@ -107,8 +107,8 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
     top: 20px;
     right: 40px;
     margin: 6px 0;
-    animation: fadein 2s forwards;
-    animation-delay: 2s;
+    animation: fadein 3s forwards;
+    animation-delay: 3s;
     cursor: pointer;
     display: block;
 }
@@ -186,14 +186,14 @@ h2 {
     animation: fadein 0.4s forwards;
     animation-delay: 0.4s;
     position: absolute;
-    top: 500px;
+    top: 300px;
     left: 0px;
     right: 0px;
 }
 
 .timeline {
   position: absolute;
-  top: 800px;
+  top: 600px;
   left: 0px;
   right: 0px;
 }

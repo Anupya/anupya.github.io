@@ -194,6 +194,7 @@ h2 {
   top: 1250px;
   left: 0px;
   right: 0px;
+  height: 700px;
   background: #c64141;
 }
 .timeline a {
@@ -207,24 +208,28 @@ h2 {
     font-weight: 300;
     font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
     position: absolute;
-    bottom: 450px;
+    top: 100px;
     left: 0px;
     right: 0px;
     color: white;
 }
 .timeline::before { /*timeline line */
+    position: relative;
   content: '';
   background: #C5CAE9;
   width: 5px;
   height: 95%;
-  position: absolute;
   left: 50%;
+  top: 50px;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .timeline-item {
   width: 100%; /* keeps elements touching the main timeline */
   margin-bottom: 70px; /* spacing between the timeline dots */
+  top: 200px;
+  position: relative;
 }
 .timeline-item:nth-child(even) .timeline-content {
   float: right;
@@ -365,6 +370,8 @@ h2 {
 .featured {
     position: absolute;
     top: 2000px;
+    left: 0px;
+    right: 0px;
 }
 .featured .title {
     position: absolute;

@@ -37,7 +37,7 @@ h1 {
 footer{
     opacity: 0;
     font-size: 14px;
-    position: absolute;
+    position: sticky;
     right: 0px;
     bottom: 0px;
     left: 0px;
@@ -86,7 +86,7 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
     width: 100vh;
     height: 90vh;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-    background-size: 400% 400%;
+    background-size: 400 400%;
     animation: Gradient 15s ease infinite;
 }
 .particles {
@@ -189,14 +189,30 @@ h2 {
     left: 0px;
     right: 0px;
 }
-
 .timeline {
   position: absolute;
-  top: 600px;
+  top: 1250px;
   left: 0px;
   right: 0px;
+  background: #c64141;
 }
-.timeline::before {
+.timeline a {
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    float: none;
+}
+.timeline .title { /* Jobs I've had! */
+    font-size: 25px;
+    font-weight: 300;
+    font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
+    position: absolute;
+    bottom: 450px;
+    left: 0px;
+    right: 0px;
+    color: white;
+}
+.timeline::before { /*timeline line */
   content: '';
   background: #C5CAE9;
   width: 5px;
@@ -214,8 +230,21 @@ h2 {
   float: right;
   padding: 40px 30px 10px 30px;
 }
-
-.timeline-item:nth-child(even) .timeline-content::after {
+.timeline-item:nth-child(odd) .timeline-content {
+  float: left;
+  padding: 40px 30px 10px 30px;
+}
+.timeline-dot {
+    width: 30px;
+    height: 30px;
+    background:  #3F51B5;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-top: 25px;
+    margin-left: -15px
+}
+.timeline-item:nth-child(even) .timeline-content::after { /* arrow pointing to the main line */
   content: '';
   position: absolute;
   border-style: solid;
@@ -226,12 +255,22 @@ h2 {
   border-width: 10px 15px 10px 0;
   border-color: transparent #f5f5f5 transparent transparent;
 }
+.timeline-item:nth-child(odd) .timeline-content::after { /* arrow pointing to the main line */
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0px 10px 15px;
+  border-color: transparent transparent transparent #f5f5f5;
+}
 .timeline-item::after {
   content: '';
   display: block;
   clear: both;
 }
-
 .timeline-content {
   position: relative;
   width: 35%;
@@ -239,6 +278,17 @@ h2 {
   border-radius: 4px;
   background: #FFFFFF;
   box-shadow: 0px 20px 25px -15px #000000; 
+  margin-left: 130px;
+  margin-right: 130px;
+}
+.timeline-content:hover {
+  position: relative;
+  width: 35%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #FFFFFF;
+  box-shadow: none;
+  top: 10px;
   margin-left: 130px;
   margin-right: 130px;
 }
@@ -253,40 +303,42 @@ h2 {
   border-width: 10px 0 10px 15px;
   border-color: transparent transparent transparent #f5f5f5;
 }
-
-.timeline-img {
-  width: 30px;
-  height: 30px;
-  background: #3F51B5;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  margin-top: 25px;
-  margin-left: -15px;
+.timeline-content .org-title {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
 }
-
-.timeline-card {
-  padding: 0 !important;
+.timeline-content img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 70px;
+    height: 70px;
+    float: left;
 }
-.timeline-card p {
-  padding: 0 20px;
+.timeline-content .date {
+    position: relative;
+    top: 7px;
+    font-size: 12px;
+    text-align: left;
+    left: -15px;
+    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
 }
-.timeline-card a {
-  margin-left: 20px;
-}
-
-blockquote {
-  margin-top: 30px;
-  color: #757575;
-  border-left-color: #3F51B5;
-  padding: 0 20px;
+.timeline-content p {
+    text-align: left;
+    font-size: 14px;
+    font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
+    position: relative;
+    top: 15px;
+    left: -15px;
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .timeline::before {
-    left: 50px;
-  }
-  .timeline .timeline-img {
     left: 50px;
   }
   .timeline .timeline-content {
@@ -310,6 +362,23 @@ blockquote {
   }
 }
 
+.featured {
+    position: absolute;
+    top: 2000px;
+}
+.featured .title {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Courier', 'Courier New', 'Garamond', 'Times New Roman';
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    color: white;
+}
+.featured-item {
+
+}
 /*
 .header-organization {
     opacity: 0;

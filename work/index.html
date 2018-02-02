@@ -9,7 +9,7 @@ title: Work
 	<head>
 		<h2> WORK </h2>
 	</head>
-	<body>
+	<body class="work">
 		{% include navbar.html %}
 		<!--
 		<div class="header-organization"> Organizations
@@ -61,104 +61,36 @@ title: Work
 	-->
 
 	<section class="timeline">
-	  <div class="container">
-	    <div class="timeline-item">
-	      <div class="timeline-img"></div>
+	  <div class="title">Jobs I've had!</div>
+	  	<div class="container">
+		  	<div class="timeline-item">
+		  		<div class="timeline-dot"></div>
 
-	      <div class="timeline-content js--fadeInLeft">
-	        <h2>Title</h2>
-	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-	        <a class="bnt-more" href="javascript:void(0)">More</a>
-	      </div>
-	    </div> 
+			    <div class="timeline-content js--fadeInRight">
+			     	<div class="org-title"> Symantec </div>
+			        <a href="https://www.symantec.com/" target="_blank" id="symantec">
+			    		<img src="/assets/images/symantec.png">
+			    	</a>
+			        <div class="date">Jan 2018 - Apr 2018</div>
+			        <p>Full-Time Quality Assurance Analyst</p>
+			    </div>
+	  		</div>  
+		    <div class="timeline-item">
+		    	<div class="timeline-dot"></div>
 
-	    <div class="timeline-item">
-
-	      <div class="timeline-img"></div>
-
-	      <div class="timeline-content timeline-card js--fadeInRight">
-	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-	        <a class="bnt-more" href="javascript:void(0)">More</a>
-	      </div>
-
-	    </div>   
-
-	    <div class="timeline-item">
-
-	      <div class="timeline-img"></div>
-
-	      <div class="timeline-content js--fadeInLeft">
-	        <h2>Quote</h2>
-	        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-	      </div>
-	    </div>   
-
-	    <div class="timeline-item">
-
-	      <div class="timeline-img"></div>
-
-	      <div class="timeline-content js--fadeInRight">
-	        <h2>Title</h2>
-	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-	        <a class="bnt-more" href="javascript:void(0)">More</a>
-	      </div>
-	    </div>   
-
-	    <div class="timeline-item">
-
-	      <div class="timeline-img"></div>
-
-	      <div class="timeline-content timeline-card js--fadeInLeft">
-	        <div class="timeline-img-header">
-	          <h2>Card Title</h2>
-	        </div>
-	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-	        <a class="bnt-more" href="javascript:void(0)">More</a>
-	      </div>
-	    </div>   
-
-	    <div class="timeline-item">
-
-	      <div class="timeline-img"></div>
-
-	      <div class="timeline-content timeline-card js--fadeInRight">
-	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-	        <a class="bnt-more" href="javascript:void(0)">More</a>
-	      </div>
-	    </div>  
-
-	    <div class="timeline-item">
-
-	      <div class="timeline-img"></div>
-
-	      <div class="timeline-content js--fadeInLeft">
-	        <h2>Quote</h2>
-	        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-	      </div>
-	    </div>   
-
-	    <div class="timeline-item">
-
-	      <div class="timeline-img"></div>
-
-	      <div class="timeline-content timeline-card js--fadeInRight">
-	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-	        <a class="bnt-more" href="javascript:void(0)">More</a>
-	      </div>
-	    </div>  
-
-	    <div class="timeline-item">
-
-	      <div class="timeline-img"></div>
-
-	      <div class="timeline-content js--fadeInLeft">
-	        <h2>Title</h2>
-	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-	        <a class="bnt-more" href="javascript:void(0)">More</a>
-	      </div>
-	    </div>   
+		      	<div class="timeline-content js--fadeInLeft">
+			        <div class="org-title"> Iotum </div>
+			       	<a href="https://www.iotum.com/" target="_blank" id="iotum">
+			    		<img src="/assets/images/iotum.png">
+			    	</a>
+			       	<div class="date">May 2017 - August 2017</div>
+			        <p>Full-Time Quality Assurance Analyst and Graphic Designer</p>
+		      	</div>
+		    </div> 
 
 	    <script language="javascript" type="text/javascript">
+	    	google.load("jquery", "1.7.1");
+	    	google.load('visualization', '1', {'packages':['annotatedtimeline']});
 	    	$(function(){
 
 			  window.sr = ScrollReveal();
@@ -213,6 +145,16 @@ title: Work
 		</script>
 		<noscript> Sorry, Javascript is needed to go ahead. </noscript>
 	  </div>
+	</section>
+
+	<section class="featured">
+		<div class="title">Side-projects</div>
+		<div class="container">
+			<div class="featured-item">
+
+			</div>
+
+		</div>
 	</section>
 	</body>
 

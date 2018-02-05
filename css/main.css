@@ -37,10 +37,9 @@ h1 {
 footer{
     opacity: 0;
     font-size: 14px;
-    position: sticky;
-    right: 0px;
+    position: absolute;
     bottom: 0px;
-    left: 0px;
+    width: 100%;
     text-decoration: none;
     animation: fadein 2.5s forwards;
     animation-delay: 2.5s;
@@ -110,6 +109,7 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
     animation-delay: 3s;
     cursor: pointer;
     display: block;
+    z-index: 100;
 }
 #menu-icon:hover {
     /* whatever happens here happens to the whole menu-icon */
@@ -144,6 +144,7 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
     position: fixed;
     text-decoration: none;
     cursor: pointer;
+    z-index: 100;
 }
 #menu-icon li {
     display: block;
@@ -190,12 +191,12 @@ h2 {
     right: 0px;
 }
 .timeline {
-  position: absolute;
-  top: 1250px;
-  left: 0px;
-  right: 0px;
-  height: 700px;
-  background: #c64141;
+    position: absolute;
+    top: 900px;
+    left: 0px;
+    right: 0px;
+    height: 700px;
+    background: #c64141;
 }
 .timeline a {
     list-style: none;
@@ -215,29 +216,28 @@ h2 {
 }
 .timeline::before { /*timeline line */
     position: relative;
-  content: '';
-  background: #C5CAE9;
-  width: 5px;
-  height: 95%;
-  left: 50%;
-  top: 50px;
-  transform: translateX(-50%);
-  z-index: 1;
+    content: '';
+    background: #C5CAE9;
+    width: 5px;
+    height: 95%;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
 }
 
 .timeline-item {
-  width: 100%; /* keeps elements touching the main timeline */
-  margin-bottom: 70px; /* spacing between the timeline dots */
-  top: 200px;
-  position: relative;
+    width: 100%; /* keeps elements touching the main timeline */
+    margin-bottom: 70px; /* spacing between the timeline dots */
+    top: 200px;
+    position: relative;
 }
 .timeline-item:nth-child(even) .timeline-content {
-  float: right;
-  padding: 40px 30px 10px 30px;
+    float: right;
+    padding: 40px 30px 10px 30px;
 }
 .timeline-item:nth-child(odd) .timeline-content {
-  float: left;
-  padding: 40px 30px 10px 30px;
+    float: left;
+    padding: 40px 30px 10px 30px;
 }
 .timeline-dot {
     width: 30px;
@@ -372,19 +372,71 @@ h2 {
     top: 2000px;
     left: 0px;
     right: 0px;
+    background: #0000FF;
+    height: 2000px;
 }
 .featured .title {
     position: absolute;
     font-size: 25px;
     font-weight: 300;
     font-family: 'Courier', 'Courier New', 'Garamond', 'Times New Roman';
-    top: 0px;
+    top: 100px;
     left: 0px;
     right: 0px;
     color: white;
 }
 .featured-item {
-
+    position: relative;
+    top: 200px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    cursor: pointer;
+}
+.featured-item:hover .overlay {
+    opacity: 0.6;
+}
+.featured-item img {
+    display: block;
+    padding: 50px;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    align-content: center;
+    position: absolute
+    margin-bottom: 30px;
+}
+.featured-item .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #000080;
+}
+.featured-item .header {
+    color: white;
+    font-size: 50;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
+}
+.featured-item .text {
+    color: white;
+    font-size: 28;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
 }
 
 

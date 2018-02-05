@@ -36,10 +36,8 @@ h1 {
 
 footer{
     opacity: 0;
-    font-size: 14px;
-    position: absolute;
-    bottom: 0px;
     width: 100%;
+    position: absolute;
     text-decoration: none;
     animation: fadein 2.5s forwards;
     animation-delay: 2.5s;
@@ -190,6 +188,10 @@ h2 {
     left: 0px;
     right: 0px;
 }
+
+.work {
+    background: white;
+}
 .timeline {
     position: absolute;
     top: 900px;
@@ -215,13 +217,13 @@ h2 {
     color: white;
 }
 .timeline::before { /*timeline line */
-    position: relative;
+    position: absolute;
     content: '';
     background: #C5CAE9;
     width: 5px;
-    height: 95%;
+    height: 55%;
     left: 50%;
-    top: 50px;
+    top: 150px;
     transform: translateX(-50%);
 }
 
@@ -369,11 +371,11 @@ h2 {
 
 .featured {
     position: absolute;
-    top: 2000px;
+    top: 1600px;
     left: 0px;
     right: 0px;
     background: #0000FF;
-    height: 2000px;
+    height: 2200px;
 }
 .featured .title {
     position: absolute;
@@ -397,13 +399,14 @@ h2 {
     opacity: 0.6;
 }
 .featured-item img {
-    display: block;
+    display: inline-block;
     padding: 50px;
     top: 50px;
     left: 0px;
     right: 0px;
+    bottom: 50px;
     align-content: center;
-    position: absolute
+    position: relative;
     margin-bottom: 30px;
 }
 .featured-item .overlay {
@@ -439,6 +442,9 @@ h2 {
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
 }
 
+.play {
+    background: white;
+}
 
 /* COOL BORDER ANIMATION #7 in
 https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937

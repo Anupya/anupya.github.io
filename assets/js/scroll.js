@@ -1,11 +1,13 @@
 function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
-
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
-
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    
+    if ($(elem).length) {
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+    
 }
 
 $(window).scroll(function(){
@@ -15,6 +17,12 @@ $(window).scroll(function(){
     }
     if (isScrolledIntoView('.featured .title') === true) {
         $('.featured .title').addClass('in-view')
+    }
+    if (isScrolledIntoView('.love .title') === true) {
+        $('.love .title').addClass('in-view')
+    }
+    if (isScrolledIntoView('.book-reviews .title') === true) {
+        $('.book-reviews .title').addClass('in-view')
     }
 
 });

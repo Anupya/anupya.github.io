@@ -38,9 +38,10 @@ footer{
     opacity: 0;
     width: 100%;
     position: absolute;
+    bottom: 0px;
     text-decoration: none;
-    animation: fadein 2.5s forwards;
-    animation-delay: 2.5s;
+    animation: fadein 1s forwards;
+    animation-delay: 1s;
 }
 
 /* PARAGRAPHS AND BODY */
@@ -103,8 +104,8 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
     top: 20px;
     right: 40px;
     margin: 6px 0;
-    animation: fadein 3s forwards;
-    animation-delay: 3s;
+    animation: fadein 2s forwards;
+    animation-delay: 1.5s;
     cursor: pointer;
     display: block;
     z-index: 100;
@@ -184,7 +185,7 @@ h2 {
     animation: fadein 0.4s forwards;
     animation-delay: 0.4s;
     position: absolute;
-    top: 300px;
+    top: 250px;
     left: 0px;
     right: 0px;
 }
@@ -198,13 +199,15 @@ h2 {
     left: 0px;
     right: 0px;
     height: 700px;
-    background: #c64141;
+    background: #E24E42;
 }
 .timeline a {
     list-style: none;
     text-decoration: none;
     display: block;
     float: none;
+    color: black;
+    cursor: pointer;
 }
 .timeline .title { /* Jobs I've had! */
     font-size: 25px;
@@ -229,7 +232,7 @@ h2 {
 .timeline::before { /*timeline line */
     position: absolute;
     content: '';
-    background: #C5CAE9;
+    background: #B8B8B8;
     width: 5px;
     height: 55%;
     left: 50%;
@@ -254,7 +257,7 @@ h2 {
 .timeline-dot {
     width: 30px;
     height: 30px;
-    background:  #3F51B5;
+    background:  #E9B000;
     border-radius: 50%;
     position: absolute;
     left: 50%;
@@ -384,7 +387,7 @@ h2 {
     top: 1600px;
     left: 0px;
     right: 0px;
-    background: #0000FF;
+    background: #008F95;
     height: 2200px;
 }
 .featured .title {
@@ -410,14 +413,15 @@ h2 {
 
 .featured-item {
     position: relative;
-    top: 200px;
+    top: 100px;
     left: 0px;
     right: 0px;
     width: 100%;
     cursor: pointer;
 }
 .featured-item:hover .overlay {
-    opacity: 0.6;
+    opacity: 1;
+    cursor: pointer;
 }
 .featured-item img {
     display: inline-block;
@@ -432,7 +436,7 @@ h2 {
 }
 .featured-item .overlay {
     position: absolute;
-    top: 0;
+    top: 60px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -444,19 +448,19 @@ h2 {
 }
 .featured-item .header {
     color: white;
-    font-size: 50;
+    font-size: 75px;
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
+    letter-spacing: -2px;
 }
 .featured-item .text {
     color: white;
-    font-size: 28;
+    font-size: 16px;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -476,33 +480,58 @@ h2 {
 .play {
     background: white;
 }
-
-.play .gallery {
-    position: absolute;
+.love {
+    background: #EB6E80;
     top: 1000px;
-    left: 50px;
-    right: 50px;
+    height: 600px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
 }
-
-.play .gallery-cell {
-  width: 250px;
-  height: 200px;
-  background: #6DBDD6;
+.love .title { /* I write book reviews */
+    font-size: 25px;
+    font-weight: 300px;
+    font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    color: white;
+    opacity: 1;
+}
+.love .title.in-view {
+    opacity: 1;
+    white-space: nowrap;
+    animation: typewriter 3s steps(44) 1 normal both, 
+        blinkTextCursor 500ms steps(44) infinite normal;
+    transform: translateY(-50%);
+    overflow: hidden;
+    margin: 0 auto;
+} 
+.love .gallery {
+    top: 200px;
+    position: absolute;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.love .gallery-cell {
+  width: 225px;
+  height: 180px;
+  background: #008F95;
   counter-increment: gallery-cell;
   margin-right: 0;
+  display: inline-block;
 }
 
-.play .gallery-cell img {
-    position: absolute;
-    width: 125px;
-    height: 125px;
+.love .gallery-cell img {
+    width: 100px;
+    height: 100px;
     left: 60px;
-    top: 37px;
+    top: 20px;
     bottom: 37px;
 }
-
-/* cell number */
-.play .gallery-cell:before {
+.love .gallery-cell:before {
   display: block;
   text-align: center;
   content: counter(gallery-cell);
@@ -510,12 +539,85 @@ h2 {
   color: white;
 }
 
-.play .flickity-page-dots {
-    opacity: 0;
+.book-reviews {
+    position: absolute;
+    top: 1600px;
+    left: 0px;
+    right: 0px;
+    background: #E9B000;
+    width: 100%;
+    height: 1500px;
 }
-.play .flickity-viewport {
-    border: none;
+.book-reviews .title { /* I write book reviews */
+    font-size: 25px;
+    font-weight: 100;
+    font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    right: 0px;
+    color: white;
+    opacity: 1;
 }
+.book-reviews .title.in-view {
+    opacity: 1;
+    white-space: nowrap;
+    animation: typewriter 3s steps(44) 1 normal both, 
+        blinkTextCursor 500ms steps(44) infinite normal;
+    transform: translateY(-50%);
+    overflow: hidden;
+    margin: 0 auto;
+} 
+.book-reviews .bookshelf--frame {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  right: 0px;
+}
+.book-reviews .bookshelf--frame {
+    background: tan;
+  background: url('/assets/images/wood.png'), 
+  linear-gradient(#323232, #373737 290px, #a8914e 290px, #a8914e 292px, 
+    #9A8548 292px, #9A8548 298px, #8c7942 298px, #a8914e 300px);
+  background-size: auto, 5px 300px;
+  border-left: 10px solid #8c7942;
+  border-right: 10px solid #8c7942;
+  text-align: center;
+}
+.book-reviews .bookshelf--frame:first-of-type {
+  border-top: 10px solid #9A8548;
+}
+.book-reviews .bookshelf--frame .book-wrapper {
+  display: inline-block;
+  width: 290px;
+  vertical-align: bottom;
+  height: 260px;
+  position: relative;
+  margin: 9px 0;
+  max-width: 100%;
+}
+.book-reviews .bookshelf--frame .book-wrapper img {
+  height: 230px;
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  transform: translateX(-50%);
+  max-height: 100%;
+  max-width: 100%;
+  transform: skew(-3deg);
+  box-shadow: 3px #000000;
+}
+.book-reviews .bookshelf--frame .book-wrapper img:hover {
+    height: 100%;
+    width: 60%;
+    transform: skew(0deg);
+    cursor: pointer;
+    transition: ease;
+}
+
 /* COOL BORDER ANIMATION #7 in
 https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937
 */

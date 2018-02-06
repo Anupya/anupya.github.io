@@ -8,53 +8,108 @@ title: Work
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <head>
         <h2> PLAY </h2>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="/assets/js/scroll.js"></script>
     </head>
+    {% include navbar.html %}
     <body class="play">
-        
+
         <!-- Love -->
-        <div class="gallery js-flickity"
-          data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
-          <div class="gallery-cell" id="Harry Potter">
-              <img src="/assets/images/sample.png">
-          </div>
-          <div class="gallery-cell" id="Japanese Dramas">
-              <img src="/assets/images/sample.png">
-          </div>
-          <div class="gallery-cell" id="Riverdale">
-              <img src="/assets/images/sample.png">
-          </div>
-          <div class="gallery-cell" id="iPad Pencil">
-              <img src="/assets/images/sample.png">
-          </div>
-          <div class="gallery-cell" id="Writing Reviews">
-              <img src="/assets/images/sample.png">
-          </div>
-          <div class="gallery-cell" id="Supernatural">
-              <img src="/assets/images/sample.png">
-          </div>
-          <div class="gallery-cell" id="Badminton">
-              <img src="/assets/images/sample.png">
-          </div>
-          <div class="gallery-cell" id="Fan Conventions">
-              <img src="/assets/images/sample.png">
-          </div>
-          <div class="gallery-cell" id="Doctor Who">
-              <img src="/assets/images/sample.png">
-          </div>
-          <div class="gallery-cell" id="Indian Food">
-              <img src="/assets/images/sample.png">
-          </div>
-          <div class="gallery-cell" id="Chess">
-              <img src="/assets/images/sample.png">
-          </div>
-          <div class="gallery-cell" id="Bollywood">
-              <img src="/assets/images/sample.png">
-          </div>
-        </div>
+        <section class="love">
+            <div class="title"> I love...</div>
+            <div class="gallery">
+              <div class="gallery-cell" id="Harry Potter">
+                  <img src="/assets/images/sample.png">
+              </div>
+              <div class="gallery-cell" id="Japanese Dramas">
+                  <img src="/assets/images/sample.png">
+              </div>
+              <div class="gallery-cell" id="Riverdale">
+                  <img src="/assets/images/sample.png">
+              </div>
+              <div class="gallery-cell" id="iPad Pencil">
+                  <img src="/assets/images/sample.png">
+              </div>
+              <div class="gallery-cell" id="Writing Reviews">
+                  <img src="/assets/images/sample.png">
+              </div>
+              <div class="gallery-cell" id="Supernatural">
+                  <img src="/assets/images/sample.png">
+              </div>
+              <div class="gallery-cell" id="Badminton">
+                  <img src="/assets/images/sample.png">
+              </div>
+              <div class="gallery-cell" id="Fan Conventions">
+                  <img src="/assets/images/sample.png">
+              </div>
+              <div class="gallery-cell" id="Doctor Who">
+                  <img src="/assets/images/sample.png">
+              </div>
+              <div class="gallery-cell" id="Indian Food">
+                  <img src="/assets/images/sample.png">
+              </div>
+              <div class="gallery-cell" id="Chess">
+                  <img src="/assets/images/sample.png">
+              </div>
+              <div class="gallery-cell" id="Bollywood">
+                  <img src="/assets/images/sample.png">
+              </div>
+            </div>
+        </section>
 
-        <!-- Volunteering -->
+        <!-- Book Reviews -->
+        <section class="book-reviews">
+            <div class="bookshelf--frame">
+                <div class="title"> I write reviews!</div>
+                 
+                    <div class="book-wrapper">
+                        <a href="http://torontopubliclibrary.typepad.com/word_out_2014/2014/05/war-is-a-fire-that-touches-every-man-allies-and-assassins-by-justin-somper-reviewed.html" target="_blank" id="allies-and-assassins">
+                            <img src="/assets/images/allies.png">
+                        </a>
+                    </div>
+                    <div class="book-wrapper">
+                        <a href="https://sites.google.com/site/tennantianmentreviewers/wimpykid/welcometothewimpyverse" target="_blank" id="broadchurch">
+                            <img src="/assets/images/broadchurch.png">
+                        </a>
+                    </div>
+                    <div class="book-wrapper">
+                        <a href="http://torontopubliclibrary.typepad.com/teens/2016/07/are-you-happy.html" target="_blank" id="make-happy">
+                            <img src="/assets/images/make-happy.png">
+                        </a>
+                    </div>
+                    <div class="book-wrapper">
+                        <a href="http://torontopubliclibrary.typepad.com/teens/2016/07/what-would-dory-do.html" target="_blank" id="finding-dory">
+                            <img src="/assets/images/finding-dory.png">
+                        </a>
+                    </div>
+                    <div class="book-wrapper">
+                        <a href="http://torontopubliclibrary.typepad.com/word_out_2014/2014/05/i-refuse-to-be-a-tortoise-hung-up-by-kristen-tracy-reviewed.html" target="_blank" id="hung-up">
+                            <img src="/assets/images/hung-up.png">
+                        </a>
+                    </div>
+                    <div class="book-wrapper">
+                        <a href="http://torontopubliclibrary.typepad.com/word_out_2014/2014/08/idols-by-margaret-stohl-reviewed-by-anupya-age-15-how-do-we-fit-together-these-men-who-call-us-children-yet-insist-w.html" target="_blank" id="idols">
+                            <img src="/assets/images/idols.png">
+                        </a>
+                    </div>
+                    <div class="book-wrapper">
+                        <a href="http://torontopubliclibrary.typepad.com/word_out_2014/2014/07/just-like-the-movies-by-kelly-fiore-i-dont-know-if-there-are-17-year-old-girls-centring-their-lives-on-a-guy-and-who-cal.html" target="_blank" id="just-like-the-movies">
+                            <img src="/assets/images/just-like.png">
+                        </a>
+                    </div>
+                    <div class="book-wrapper">
+                        <a href="http://torontopubliclibrary.typepad.com/word_out_2014/2014/07/nantucket-red-by-leila-howland-reviewed-by-anupya-maybe-love-existed-in-the-spaces-in-between-cricket-elizabeth-th.html" target="_blank" id="nantucket-red">
+                            <img src="/assets/images/nantucket.png">
+                        </a>
+                    </div>
+                    <div class="book-wrapper">
+                        <a href="http://torontopubliclibrary.typepad.com/word_out_2014/2014/08/the-secrets-of-lily-graves-by-sarah-strohmeyer-reviewed-by-anupya-age-15-more-often-than-not-it-was-the-little-thin.html" target="_blank" id="secrets-of-lily-graves">
+                            <img src="/assets/images/secrets-of-lily-graves.png">
+                        </a>
+                    </div>
 
+            </div>
+        </section>
     </body>
 
     {% include footer.html %}

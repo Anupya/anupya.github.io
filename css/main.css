@@ -87,13 +87,22 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;
 }
-.particles {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 1000px;
-    height: 1000px;
-    background-color: black;
+
+#canvas {
+  background: white;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#info {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: rgba(25, 25, 25, 0.7);
+  color: black;
+  font-family: 'Open Sans';
+  font-weight: 300;
 }
 
 #menu-icon img {
@@ -195,7 +204,7 @@ h2 {
 }
 .timeline {
     position: absolute;
-    top: 900px;
+    top: 750px;
     left: 0px;
     right: 0px;
     height: 700px;
@@ -384,7 +393,7 @@ h2 {
 
 .featured {
     position: absolute;
-    top: 1600px;
+    top: 1450px;
     left: 0px;
     right: 0px;
     background: #008F95;
@@ -420,6 +429,7 @@ h2 {
     cursor: pointer;
 }
 .featured-item:hover .overlay {
+    right: 2px;
     opacity: 1;
     cursor: pointer;
 }
@@ -447,17 +457,17 @@ h2 {
     background-color: #000080;
 }
 .featured-item .header {
-    color:#B8B8B8;
-    font-size: 75px;
+    color: white;
+    font-size: 60px;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     letter-spacing: -2px;
 }
 .featured-item .text {
-    color: #B8B8B8;
+    color: white;
     font-size: 16px;
     position: absolute;
     top: 70%;
@@ -482,7 +492,7 @@ h2 {
 }
 .love {
     background: #EB6E80;
-    top: 1000px;
+    top: 800px;
     height: 600px;
     left: 0px;
     right: 0px;
@@ -505,14 +515,13 @@ h2 {
     animation: typewriter 3s steps(44) 1 normal both, 
         blinkTextCursor 500ms steps(44) infinite normal;
     transform: translateY(-50%);
-    overflow: hidden;
     margin: 0 auto;
 } 
 .love .gallery {
     top: 200px;
     position: absolute;
-    overflow: hidden;
     white-space: nowrap;
+    overflow: hidden;
 }
 .love .gallery-cell {
   width: 200px;
@@ -541,7 +550,7 @@ h2 {
 
 .book-reviews {
     position: absolute;
-    top: 1600px;
+    top: 1400px;
     left: 0px;
     right: 0px;
     background: #E9B000;
@@ -612,7 +621,7 @@ h2 {
 }
 .book-reviews .bookshelf--frame .book-wrapper img:hover {
     height: 100%;
-    width: 60%;
+    width: 65%;
     transform: skew(0deg);
     cursor: pointer;
     transition: ease;

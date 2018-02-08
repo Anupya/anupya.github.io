@@ -12,6 +12,8 @@ title: Work
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="/assets/js/scroll.js"></script>
         <script src="/assets/js/particles.js"></script>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
     </head>
     {% include navbar.html %}
     <body class="play">
@@ -19,6 +21,7 @@ title: Work
         <!-- Love -->
         <section class="love">
             <div class="title"> I love...</div>
+            <div class="gallery-hidden">
             <div class="gallery">
               <div class="gallery-cell" id="Harry Potter">
                   <img src="/assets/images/sample.png">
@@ -57,8 +60,37 @@ title: Work
                   <img src="/assets/images/sample.png">
               </div>
             </div>
+            <a href="#" id="left-button"><img src="/assets/images/sample.png"/></a>
+            <a href="#" id="right-button"><img src="/assets/images/sample.png"/></a>
+        </div>
         </section>
 
+            <!--
+        <script>
+           $('#right-button').click(function() {
+              event.preventDefault();
+              $('.gallery-cell').animate({
+                transform: translate(50px);
+              }, "fast");
+           });
+           $('#left-button').click(function() {
+              event.preventDefault();
+              $('.gallery-cell').animate({
+                transform: translate(-50px);
+              }, "fast");
+           });
+        </script>
+    -->
+        <script>
+            jQuery(".gallery").draggable({ 
+            cursor: "move", 
+            containment: ".gallery",
+            stop: function() {
+              if(jQuery(".gallery").position().left < 1)
+                  jQuery(".gallery").css("left", "720px");
+            }
+        });
+        </script>
         <!-- Book Reviews -->
         <section class="book-reviews">
             <div class="bookshelf--frame">

@@ -519,8 +519,19 @@ h2 {
 } 
 .love .gallery {
     top: 200px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
     position: absolute;
     white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-width: 1000px;
+}
+.love .gallery-hidden {
+    top: 200px;
+    left: 0px;
+    right: 0px;
     overflow: hidden;
 }
 .love .gallery-cell {
@@ -528,10 +539,11 @@ h2 {
   height: 180px;
   background: none;
   counter-increment: gallery-cell;
-  margin-right: 0;
   display: inline-block;
 }
-
+.love .gallery-cell::-webkit-scrollbar {
+    display: none;
+}
 .love .gallery-cell img {
     width: 100px;
     height: 100px;

@@ -21,76 +21,87 @@ title: Work
         <!-- Love -->
         <section class="love">
             <div class="title"> I love...</div>
-            <div class="gallery-hidden">
-            <div class="gallery">
-              <div class="gallery-cell" id="Harry Potter">
-                  <img src="/assets/images/sample.png">
-              </div>
-              <div class="gallery-cell" id="Japanese Dramas">
-                  <img src="/assets/images/sample.png">
-              </div>
-              <div class="gallery-cell" id="Riverdale">
-                  <img src="/assets/images/sample.png">
-              </div>
-              <div class="gallery-cell" id="iPad Pencil">
-                  <img src="/assets/images/sample.png">
-              </div>
-              <div class="gallery-cell" id="Writing Reviews">
-                  <img src="/assets/images/sample.png">
-              </div>
-              <div class="gallery-cell" id="Supernatural">
-                  <img src="/assets/images/sample.png">
-              </div>
-              <div class="gallery-cell" id="Badminton">
-                  <img src="/assets/images/sample.png">
-              </div>
-              <div class="gallery-cell" id="Fan Conventions">
-                  <img src="/assets/images/sample.png">
-              </div>
-              <div class="gallery-cell" id="Doctor Who">
-                  <img src="/assets/images/sample.png">
-              </div>
-              <div class="gallery-cell" id="Indian Food">
-                  <img src="/assets/images/sample.png">
-              </div>
-              <div class="gallery-cell" id="Chess">
-                  <img src="/assets/images/sample.png">
-              </div>
-              <div class="gallery-cell" id="Bollywood">
-                  <img src="/assets/images/sample.png">
-              </div>
+            <div class="gallery-parent">
+                <div class="gallery-container">
+                    <div class="gallery">
+                      <div class="gallery-cell" id="Harry Potter">
+                          <img src="/assets/images/sample.png">
+                      </div>
+                      <div class="gallery-cell" id="Japanese Dramas">
+                          <img src="/assets/images/sample.png">
+                      </div>
+                      <div class="gallery-cell" id="Riverdale">
+                          <img src="/assets/images/sample.png">
+                      </div>
+                      <div class="gallery-cell" id="iPad Pencil">
+                          <img src="/assets/images/sample.png">
+                      </div>
+                      <div class="gallery-cell" id="Supernatural">
+                          <img src="/assets/images/sample.png">
+                      </div>
+                      <div class="gallery-cell" id="Badminton">
+                          <img src="/assets/images/sample.png">
+                      </div>
+                      <div class="gallery-cell" id="Fan Conventions">
+                          <img src="/assets/images/sample.png">
+                      </div>
+                      <div class="gallery-cell" id="Doctor Who">
+                          <img src="/assets/images/sample.png">
+                      </div>
+                      <div class="gallery-cell" id="Indian Food">
+                          <img src="/assets/images/sample.png">
+                      </div>
+                      <div class="gallery-cell" id="Chess">
+                          <img src="/assets/images/sample.png">
+                      </div>
+                      <div class="gallery-cell" id="Bollywood">
+                          <img src="/assets/images/sample.png">
+                      </div>
+                    </div>
+                    <div class="clear"></div>
             </div>
-            <a href="#" id="left-button"><img src="/assets/images/sample.png"/></a>
-            <a href="#" id="right-button"><img src="/assets/images/sample.png"/></a>
-        </div>
+            <div class="left"><img src="/assets/images/love-left.png"></div>
+            <div class="right"><img src="/assets/images/love-right.png"></div>
+            </div>
         </section>
 
-            <!--
         <script>
-           $('#right-button').click(function() {
-              event.preventDefault();
-              $('.gallery-cell').animate({
-                transform: translate(50px);
-              }, "fast");
-           });
-           $('#left-button').click(function() {
-              event.preventDefault();
-              $('.gallery-cell').animate({
-                transform: translate(-50px);
-              }, "fast");
-           });
+            $ ( function() {
+                $(".gallery").draggable({
+                    containment: ".gallery-container"
+                });
+            })
         </script>
-    -->
+    <!--
         <script>
             jQuery(".gallery").draggable({ 
             cursor: "move", 
-            containment: ".gallery",
+            containment: ".gallery-parent",
+            /* function that actually enables the dragging */
+            start: function() {
+                if(jQuery(".gallery").position().left < 1)
+                    jQuery(".gallery").css("left", "100px");
+            }
             stop: function() {
               if(jQuery(".gallery").position().left < 1)
                   jQuery(".gallery").css("left", "720px");
             }
         });
         </script>
+    -->
+        <!--
+        <script>
+            jQuery("#child").draggable({ 
+            axis: "x",
+            cursor: "move", 
+            containment: "parent",
+            stop: function() {
+              if(jQuery("#child").position().right < 1)
+                  jQuery("#child").css("left", "10px");
+            }
+        });
+        </script>
+    -->
         <!-- Book Reviews -->
         <section class="book-reviews">
             <div class="bookshelf--frame">

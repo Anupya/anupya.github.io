@@ -12,8 +12,13 @@ title: Work
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="/assets/js/scroll.js"></script>
         <script src="/assets/js/particles.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+
+        <script type="text/javascript" src="/assets/js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="/assets/js/jcarousel.ajax.js"></script>
+
     </head>
     {% include navbar.html %}
     <body class="play">
@@ -21,6 +26,7 @@ title: Work
         <!-- Love -->
         <section class="love">
             <div class="title"> I love...</div>
+            <!--
             <div class="gallery-parent">
                 <div class="gallery-container">
                     <div class="gallery">
@@ -63,8 +69,42 @@ title: Work
             <div class="left"><img src="/assets/images/love-left.png"></div>
             <div class="right"><img src="/assets/images/love-right.png"></div>
             </div>
+        -->
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel" data-jcarousel="true">
+                    <ul style="left: -303px; top: 0px;">
+                        <li><img src="/assets/images/sample.png" alt="Harry Potter"></li>
+                        <li><img src="/assets/images/sample.png" alt="Japanese Dramas"></li>
+                        <li><img src="/assets/images/sample.png" alt="Riverdale"></li>
+                        <li><img src="/assets/images/sample.png" alt="iPad Pencil"></li>
+                        <li><img src="/assets/images/sample.png" alt="Supernatural"></li>
+                        <li><img src="/assets/images/sample.png" alt="Badminton"></li>
+                        <li><img src="/assets/images/sample.png" alt="Fan Conventions"></li>
+                        <li><img src="/assets/images/sample.png" alt="Doctor Who"></li>
+                        <li><img src="/assets/images/sample.png" alt="Indian Food"></li>
+                        <li><img src="/assets/images/sample.png" alt="Chess"></li>
+                        <li><img src="/assets/images/sample.png" alt="Bollywood"></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
+                <a href="#" class="jcarousel-control-next inactive" data-jcarouselcontrol="true">›</a>
+            </div>
         </section>
 
+        <script>
+            jQuery('.jcarousel').jcarousel({
+                wrap: 'circular',
+                animation: 1000,
+                auto: 3
+            })
+            jQuery('.jcarousel').jcarouselAutoscroll({
+            interval: 2000,
+            target: '+=1',
+            autostart: true
+        })
+        </script>
+        <!--
         <script>
             $ ( function() {
                 $(".gallery").draggable({
@@ -72,6 +112,36 @@ title: Work
                 });
             })
         </script>
+        <script>
+             document.getElementById(".gallery").addEventListener("scroll", function (event) {
+             var newDiv = document.createElement("div");
+                newDiv.innerHTML = "my awesome new div";
+                document.getElementById(".gallery").appendChild(newDiv);
+            });
+
+
+            var checkForNewDiv = function () {
+                var lastDiv = document.querySelector(".gallery > div:last-child");
+                var maindiv = document.querySelector(".gallery");
+                var lastDivOffset = lastDiv.offsetTop + lastDiv.clientHeight;
+                var pageOffset = maindiv.offsetTop + maindiv.clientHeight;   
+                if (pageOffset > lastDivOffset - 10) {
+                    var newDiv = document.createElement("div");
+                    newDiv.innerHTML = "my awesome new div";
+                    document.getElementById(".gallery").appendChild(newDiv);
+                    checkForNewDiv();
+                }
+            };
+
+            checkForNewDiv();
+        </script>
+        -->
+
+        <!-- MAKE LOVE INFINITE SCROLL 
+            https://www.sitepoint.com/jquery-infinite-scrolling-demos/
+            http://jsfiddle.net/8LpFR/2/
+
+        -->
     <!--
         <script>
             jQuery(".gallery").draggable({ 

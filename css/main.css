@@ -545,7 +545,7 @@ h2 {
     float: left;
     width: 150px;
     height: 140px;
-    margin-right: 1px;
+    margin-right: 20px;
 }
 
 .jcarousel img {
@@ -559,22 +559,23 @@ h2 {
 
 /** Carousel Controls **/
 
-.jcarousel-control-prev,
-.jcarousel-control-next {
+.jcarousel-control-prev img,
+.jcarousel-control-next img {
     position: absolute;
     text-align: center;
     background: none;
     color: white;
     text-decoration: none;
-    font: 60px/63px Arial, sans-serif;
+    top: 280px;
+    height: 30px;
 }
 
 .jcarousel-control-prev {
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 .jcarousel-control-next {
-    margin: 20px;
+    margin: 40px;
 }
 
 .jcarousel-control-prev:hover span,
@@ -591,7 +592,7 @@ h2 {
     position: relative;
     top: 20px;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
-    font-size: 70px;
+    font-size: 90px;
     color: white;
     font-stretch: ultra-condensed;
     font-weight: 100;

@@ -19,6 +19,8 @@ title: Work
         <script type="text/javascript" src="/assets/js/jquery.jcarousel.min.js"></script>
         <script type="text/javascript" src="/assets/js/jcarousel.ajax.js"></script>
 
+        <!-- adding captions to images -->
+
     </head>
     {% include navbar.html %}
     <body class="play">
@@ -73,20 +75,20 @@ title: Work
             <div class="jcarousel-wrapper">
                 <div class="jcarousel" data-jcarousel="true">
                     <ul style="left: -303px; top: 0px;">
-                        <li><img src="/assets/images/sample.png" alt="Harry Potter"></li>
-                        <li><img src="/assets/images/sample.png" alt="Japanese Dramas"></li>
-                        <li><img src="/assets/images/sample.png" alt="Riverdale"></li>
-                        <li><img src="/assets/images/sample.png" alt="iPad Pencil"></li>
-                        <li><img src="/assets/images/sample.png" alt="Supernatural"></li>
-                        <li><img src="/assets/images/sample.png" alt="Badminton"></li>
-                        <li><img src="/assets/images/sample.png" alt="Fan Conventions"></li>
-                        <li><img src="/assets/images/sample.png" alt="Doctor Who"></li>
-                        <li><img src="/assets/images/sample.png" alt="Indian Food"></li>
-                        <li><img src="/assets/images/sample.png" alt="Chess"></li>
-                        <li><img src="/assets/images/sample.png" alt="Bollywood"></li>
+                        <li><img title="RIVERDALE" src="/assets/images/hp.png"></li>
+                        <li><img title="APPLE PENCIL" src="/assets/images/jdrama.png"></li>
+                        <li><img title="SUPERNATURAL" src="/assets/images/riverdale.png"></li>
+                        <li><img title="BADMINTON" src="/assets/images/applepencil.png"></li>
+                        <li><img title="FAN CONVENTIONS" src="/assets/images/spn.png"></li>
+                        <li><img title="DOCTOR WHO" src="/assets/images/badminton.png"></li>
+                        <li><img title="INDIAN FOOD" src="/assets/images/fanconventions.png"></li>
+                        <li><img title="CHESS" src="/assets/images/doctorwho.png"></li>
+                        <li><img title="BOLLYWOOD" src="/assets/images/indianfood.png"></li>
+                        <li><img title="HARRY POTTER" src="/assets/images/chess.png"></li>
+                        <li><img title="JAPANESE DRAMAS" src="/assets/images/bollywood.png"></li>
                     </ul>
                 </div>
-
+                <div class="image-caption"></div>
                 <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
                 <a href="#" class="jcarousel-control-next inactive" data-jcarouselcontrol="true">›</a>
             </div>
@@ -102,7 +104,14 @@ title: Work
             interval: 2000,
             target: '+=1',
             autostart: true
-        })
+            })
+            
+            $('.jcarousel').on('jcarousel:targetin', 'li', function(event, carousel)
+              {
+                  var title = $(this).find('img').attr('title');
+                  if(true) $('.image-caption').html(title);
+            });
+
         </script>
         <!--
         <script>

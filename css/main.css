@@ -521,11 +521,7 @@ h2 {
 .jcarousel-wrapper {
     margin: 0px auto;
     position: relative;
-    top: 250px;
-
-    /*
-    (4 * width: 150px) + (3 * margin-right: 1px) = 603px
-    */
+    top: 200px;
     width: 800px;
     height: 100px;
 }
@@ -548,12 +544,12 @@ h2 {
 .jcarousel li {
     float: left;
     width: 150px;
-    height: 100px;
+    height: 140px;
     margin-right: 1px;
 }
 
 .jcarousel img {
-    max-height: 100px;
+    max-height: 140px;
 }
 
 .jcarousel .loading {
@@ -574,11 +570,11 @@ h2 {
 }
 
 .jcarousel-control-prev {
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
 .jcarousel-control-next {
-    margin: 40px;
+    margin: 20px;
 }
 
 .jcarousel-control-prev:hover span,
@@ -591,74 +587,16 @@ h2 {
     opacity: .5;
     cursor: default;
 }
-
-/*
-
-.love .gallery-parent {
-    top: 200px;
-    left: 0px;
-    right: 0px;
-    position: absolute;
-    width: 1000px;
-    margin: 0 auto;
-    height: 100px;
-    overflow: hidden;
-}
-.love .gallery-container { 
+.love .image-caption {
     position: relative;
-    width: 5000px;
-    left: -1500px;
-    height: inherit;
-}
-.love .gallery { 
-    width: 3200px;
-    left: 700px;
-    height: inherit;
-    border-left: white 5px;
-    border-right: white 5px;
-}
-.clear {
-    clear:both;
-}
-.love .gallery-cell { 
-  width: 200px;
-  height: 180px;
-  background: none;
-  /* counter-increment: gallery-cell;*/ 
-  /*
-  display: inline-block;
-  float: left;
-}
-.love .gallery-cell img {
-    width: 100px;
-    display: inline-block;
-}
-.love .gallery-cell:before {
-    opacity: 0;
-    display: block;
-    text-align: center;
-    /*content: counter(gallery-cell);*/
-    /*
-    font-size: 80px;
+    top: 20px;
+    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
+    font-size: 70px;
     color: white;
+    font-stretch: ultra-condensed;
+    font-weight: 100;
 }
-.love .left {
-    top: 50px;
-    position: relative;
-}
-.love .right {
-    top: 50px;
-    position: relative;
-}
-.love .left img {
-    width: 50px;
-    height: 50px;
-}
-.love .right img {
-    width: 50px;
-    height: 50px;
-}
-*/
+
 .book-reviews {
     position: absolute;
     top: 1400px;

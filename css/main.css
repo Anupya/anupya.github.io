@@ -37,8 +37,8 @@ h1 {
 footer{
     opacity: 0;
     width: 100%;
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    top: 5100px;
     text-decoration: none;
     animation: fadein 1s forwards;
     animation-delay: 1s;
@@ -81,11 +81,9 @@ footer{
 
 body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
     overflow: scroll;
-    width: 100vh;
-    height: 90vh;
-    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    /*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);*/
     background-size: 400% 400%;
-    animation: Gradient 15s ease infinite;
+    /*animation: Gradient 15s ease infinite;*/
 }
 
 #canvas {
@@ -197,11 +195,17 @@ h2 {
     top: 250px;
     left: 0px;
     right: 0px;
+    width: 75%;
+    margin: 0 auto;
+
 }
 
 .work {
     background: white;
+    position: relative;
+    top: 750px;
 }
+
 .timeline {
     position: absolute;
     top: 750px;
@@ -489,6 +493,8 @@ h2 {
 /* PLAY */
 .play {
     background: white;
+    position: relative;
+    top: 3000px;
 }
 .love {
     background: #EB6E80;

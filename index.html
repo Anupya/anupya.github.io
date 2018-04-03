@@ -17,11 +17,59 @@ title: Anupya Pamidimukkala
 <script type="text/javascript" src="/assets/js/jcarousel.ajax.js"></script>
 
 <div class="bio">
-    <p> Aspiring master coder. <br></br> 2nd year CS/BBA Double Degree student at University of Waterloo and Wilfrid Laurier University. </p>
 </div>
 
+<nav>
+    <div id="menu">
+	    <ul id="menu-list">
+		    <li><div id="homeBtn">HOME</div></li>
+		    <li><div id="workBtn">WORK</div></li>
+		    <li><div id="playBtn">PLAY</div></li>
+		</ul>
+	</div>
+
+    <script>
+
+    	$(document).ready(function() {
+		  var stickyNavTop = $('#menu').offset().top;
+
+		  var stickyNav = function(){
+		    var scrollTop = $(window).scrollTop();
+
+		    if (scrollTop > stickyNavTop) { 
+		      $('#menu').addClass('sticky');
+		    } else {
+		      $('#menu').removeClass('sticky'); 
+		    }
+		  };
+
+		  stickyNav();
+
+		  $(window).scroll(function() {
+		    stickyNav();
+		  });
+		});
+
+          $("#homeBtn").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#menu").offset().top},
+                    'slow');
+            });
+        $("#workBtn").click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".work").offset().top},
+                    'slow');
+            });
+        $("#playBtn").click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".play").offset().top},
+                    'slow');
+            });
+        
+    </script>
+</nav>
+
 <div class="work">
-	<canvas id="canvas"></canvas>
 	<h2>WORK</h2>
 	<section class="timeline">
 	  <div class="title">Jobs I've had!</div>
@@ -106,7 +154,6 @@ title: Anupya Pamidimukkala
 
 <div class="play">
 
-	<canvas id="canvas"></canvas>
 	<h2> PLAY </h2>
     <!-- Love -->
     <section class="love">
@@ -206,5 +253,15 @@ title: Anupya Pamidimukkala
                 </div>
 
         </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+    	<h2>About</h2>
+    	<div class="blurb">
+    	I am a sophomore at University of Waterloo and Wilfrid Laurier University and I'm pursuing BCS Computer Science and BBA Business Administration Double Degree. I was born in Hyderabad, India in 1998 and raised in Mumbai, Hyderabad and Toronto. <br><br>
+    	I am available for work in Jan-Apr 2019, May-Aug 2020 and May-Aug 2021.  <br> <br><br>
+    	Let's connect.
+    	</div>
     </section>
 </div>

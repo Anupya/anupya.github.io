@@ -113,14 +113,13 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
 }
 
 #menu {
-    top: 300px;
-    right: 35px;
-    left: 35px;
-    padding: 1px;
+    top: 320px;
+    width: 99%;
     text-decoration: none;
     z-index: 100;
     color: white;
-    position: absolute;
+    justify-content: center;
+    position: relative;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     font-size: 20px;
     background: black;

@@ -93,6 +93,14 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
     /*animation: Gradient 15s ease infinite;*/
 }
 
+#face {
+  position: absolute;
+  height: 180px;
+  width: 150px;
+  top: 140px;
+  right: 150px;
+  transform: rotate(-8deg);
+}
 /* MENU */
 #info {
   position: absolute;
@@ -108,7 +116,7 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
     top: 300px;
     right: 35px;
     left: 35px;
-    padding: 2px;
+    padding: 1px;
     text-decoration: none;
     z-index: 100;
     color: white;
@@ -436,13 +444,16 @@ a {
 }
 
 /* TEAM PROJECTS */
+
+
+
 .featured {
     position: absolute;
     top: 1500px;
     left: 0px;
     right: 0px;
     background: #008F95;
-    height: 1200px;
+    height: 700px;
 }
 .featured .title {
     position: absolute;
@@ -464,54 +475,68 @@ a {
     overflow: hidden;
     margin: 0 auto;
 } 
-
+.featured .container {
+  position: relative;
+  top: 180px;
+}
 .featured-item {
     position: relative;
-    top: 150px;
+    top: 0px;
     display: inline-block;
-    width: 35%;
+    width: 300px;
+    margin-left: 40px;
     cursor: pointer;
 }
 .featured-item:hover .overlay {
     right: 2px;
-    opacity: 1;
+    opacity: 0.8;
     cursor: pointer;
 }
 .featured-item img {
-    align-content: center;
+    width: 300px;
+    height: 300px;
+    top: 0px;
     position: relative;
-    height: 400px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 .featured-item .overlay {
-    align-content: center;
     position: relative;
     bottom: 0;
     left: 0;
     right: 0;
-    height: inherit;
-    width: inherit;
     opacity: 0;
+    top: -304px;
+    width: 300px;
+    height: 300px;
+    align-content: center;
+    border-radius: 10px;
     transition: 0.5s ease;
-    background-color: #000080;
+    background-color: #074648;
 }
 .featured-item .header {
     color: white;
     font-size: 60px;
     position: absolute;
     top: 50%;
+    opacity: 0.4;
     left: 50%;
+    cursor: pointer;
     transform: translate(-50%, -50%);
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     letter-spacing: -2px;
 }
+
 .featured-item .text {
     color: white;
+    cursor: pointer;
     font-size: 16px;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 300px;
+    padding: 30px;
+    position: relative;
+    font-weight: 100;
     text-align: center;
+    cursor: pointer;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
 }
 
@@ -535,7 +560,7 @@ a {
 .play {
     background: white;
     position: relative;
-    top: 2600px;
+    top: 2200px;
 }
 .love {
     background: #EB6E80;
@@ -726,7 +751,7 @@ a {
 
 .about {
   position: absolute;
-  top: 5400px;
+  top: 5000px;
   margin: 0 auto;
   width: 100%;
 }
@@ -746,7 +771,8 @@ footer{
     opacity: 0;
     width: 100%;
     position: absolute;
-    top: 6000px;
+    top: 5600px;
+    cursor: pointer;
     text-decoration: none;
     animation: fadein 1s forwards;
     animation-delay: 1s;
@@ -760,6 +786,7 @@ footer{
     list-style: none;
     height: 60px;
     width: auto;
+    cursor: pointer;
 }
 .social svg {
     transition: 200ms ease-out;
@@ -769,9 +796,11 @@ footer{
 }
 .social svg:hover {
     fill: #D0D0D0;
+    cursor: pointer;
 
 }
 .social li {
+    cursor: pointer;
     display: inline-block;
     padding: 10px;
 }

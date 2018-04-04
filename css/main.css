@@ -105,7 +105,7 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
   transform: rotate(-8deg);
   animation: fadein 4s;
 }
-
+/*
 #face:hover {
   animation: faceexpand 0.5s;
   width: 135px;
@@ -117,27 +117,17 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
   width: 125px;
   height: 160px;
 }
-
+*/
 /* MENU */
-#info {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  background: rgba(25, 25, 25, 0.7);
-  color: black;
-  font-family: 'Open Sans';
-  font-weight: 300;
-}
-
 #menu {
-    top: 330px;
+    position: fixed;
+    top: 15px;
     width: 99%;
-    padding: 0.5px;
+    padding: 0.04px;
     text-decoration: none;
     z-index: 100;
     color: white;
     justify-content: center;
-    position: relative;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     font-size: 20px;
     background: black;
@@ -153,6 +143,20 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
 }
 #menu div {
   cursor: pointer;
+}
+/* it is adding sticky */
+/*
+.sticky {
+    position: fixed;
+    width: 99%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+*/
+
+#menu div:hover {
+  color: #ff2e1a;
 }
 #resumeBtn {
   background: #135cb2;
@@ -192,18 +196,7 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
   width:100%;
   transition:800ms ease all;
 }
-.sticky {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    border-top: 0;
-}
 
-#menu div:hover {
-  color: red;
-}
 
 
 h2 {

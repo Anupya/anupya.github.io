@@ -12,6 +12,9 @@ function isScrolledIntoView(elem) {
 
 $(window).scroll(function(){
 
+    if (isScrolledIntoView('.solo .title') === true) {
+        $('.solo .title').addClass('in-view')
+    }
     if (isScrolledIntoView('.timeline .title') === true) {
         $('.timeline .title').addClass('in-view')
     }

@@ -34,15 +34,6 @@ h1 {
     padding-right: 30px;
 }
 
-footer{
-    opacity: 0;
-    width: 100%;
-    position: absolute;
-    top: 6200px;
-    text-decoration: none;
-    animation: fadein 1s forwards;
-    animation-delay: 1s;
-}
 
 #bg {
   position: absolute;
@@ -102,12 +93,7 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
     /*animation: Gradient 15s ease infinite;*/
 }
 
-#canvas {
-  background: white;
-  display: block;
-  height: 100vh;
-}
-
+/* MENU */
 #info {
   position: absolute;
   top: 0;
@@ -157,26 +143,6 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
   color: red;
 }
 
-/* CONTACT ME */
-.social {
-    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
-    padding: 10px;
-    list-style: none;
-    height: 60px;
-    width: auto;
-}
-.social svg {
-    transition: 200ms ease-out;
-    width: 25px;
-    height: 25px;
-}
-.social svg:hover {
-    fill:white;
-}
-.social li {
-    display: inline-block;
-    padding: 10px;
-}
 
 h2 {
     opacity: 0;
@@ -204,18 +170,89 @@ h2 {
     top: 600px;
 }
 
-.timeline {
+/* SOLO PROJECTS */
+.solo {
+  position: absolute;
+  top: 400px;
+  height: 475px;
+  width: 100%;
+  background: #551A8B;
+}
+.solo .title {
     position: absolute;
-    top: 350px;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Courier', 'Courier New', 'Garamond', 'Times New Roman';
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    color: white;
+    opacity: 0;
+}
+.solo .title.in-view {
+    opacity: 1;
+    white-space: nowrap;
+    animation: typewriter 3s steps(44) 1 normal both, 
+        blinkTextCursor 500ms steps(44) infinite normal;
+    transform: translateY(-50%);
+    overflow: hidden;
+    margin: 0 auto;
+} 
+
+.solo-item {
+  position: relative;
+  width: 450px;
+  top: 40px;
+  margin-left: 60px;
+  display: inline-block;
+}
+.solo-item img {
+  width: 450px;
+  top: 120px;
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.solo-item:hover .overlay {
+    opacity: 0.9;
+    cursor: pointer;   
+}
+.solo-item .overlay {
+    position: relative;
+    opacity: 0;
+    top: -104px;
+    width: inherit;
+    height: 220px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    background-color: #190729;
+}
+.solo-item .text {
+    color: #D0D0D0;
+    cursor: pointer;
+    font-size: 16px;
+    top: 25%;
+    padding: 30px;
+    position: relative;
+    font-weight: 100;
+    text-align: center;
+    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
+}
+
+/* EMPLOYMENT */
+.timeline {
+    position: relative;
+    top: 850px;
     left: 0px;
     right: 0px;
     height: 700px;
     background: #E24E42;
 }
-.timeline a {
+a {
     list-style: none;
     text-decoration: none;
-    display: block;
     float: none;
     color: black;
     cursor: pointer;
@@ -320,6 +357,7 @@ h2 {
   background: #FFFFFF;
   box-shadow: none;
   top: 10px;
+  cursor: pointer;
   margin-left: 130px;
   margin-right: 130px;
 }
@@ -339,6 +377,7 @@ h2 {
     top: 15px;
     left: 15px;
     text-align: left;
+    cursor: pointer;
     font-size: 20px;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
 }
@@ -349,11 +388,13 @@ h2 {
     width: 70px;
     height: 70px;
     float: left;
+    cursor: pointer;
 }
 .timeline-content .date {
     position: relative;
     top: 7px;
     font-size: 12px;
+    cursor: pointer;
     text-align: left;
     left: -15px;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
@@ -361,6 +402,7 @@ h2 {
 .timeline-content p {
     text-align: left;
     font-size: 14px;
+    cursor: pointer;
     font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
     position: relative;
     top: 15px;
@@ -393,13 +435,14 @@ h2 {
   }
 }
 
+/* TEAM PROJECTS */
 .featured {
     position: absolute;
-    top: 1000px;
+    top: 1500px;
     left: 0px;
     right: 0px;
     background: #008F95;
-    height: 1700px;
+    height: 1200px;
 }
 .featured .title {
     position: absolute;
@@ -424,10 +467,9 @@ h2 {
 
 .featured-item {
     position: relative;
-    top: 100px;
-    left: 0px;
-    right: 0px;
-    width: 100%;
+    top: 150px;
+    display: inline-block;
+    width: 35%;
     cursor: pointer;
 }
 .featured-item:hover .overlay {
@@ -436,19 +478,13 @@ h2 {
     cursor: pointer;
 }
 .featured-item img {
-    display: inline-block;
-    padding: 50px;
-    top: 50px;
-    left: 0px;
-    right: 0px;
-    bottom: 50px;
     align-content: center;
     position: relative;
-    margin-bottom: 30px;
+    height: 400px;
 }
 .featured-item .overlay {
-    position: absolute;
-    top: 60px;
+    align-content: center;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -479,6 +515,8 @@ h2 {
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
 }
 
+
+
 @keyframes typewriter {
     from {width: 0;}
     to { width: 24em; }
@@ -487,12 +525,17 @@ h2 {
     from {border-right-color: rgba(255,255,255,0.75);}
     to {border-right-color: transparent;}
 }
+@keyframes expand {
+    from {height: 100%; width: 100%;}
+    to {height: 103%; width: 103%;}
+}
+
 
 /* PLAY */
 .play {
     background: white;
     position: relative;
-    top: 3300px;
+    top: 2600px;
 }
 .love {
     background: #EB6E80;
@@ -683,7 +726,7 @@ h2 {
 
 .about {
   position: absolute;
-  top: 2200px;
+  top: 5400px;
   margin: 0 auto;
   width: 100%;
 }
@@ -692,9 +735,45 @@ h2 {
   position: absolute;
   top: 400px;
   text-align: center;
+  padding-left: 155px;
+  padding-right: 155px;
   font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
   font-size: 20px;
   font-weight: 100;
+}
+
+footer{
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    top: 6000px;
+    text-decoration: none;
+    animation: fadein 1s forwards;
+    animation-delay: 1s;
+}
+
+
+/* CONTACT ME */
+.social {
+    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
+    padding: 10px;
+    list-style: none;
+    height: 60px;
+    width: auto;
+}
+.social svg {
+    transition: 200ms ease-out;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.social svg:hover {
+    fill: #D0D0D0;
+
+}
+.social li {
+    display: inline-block;
+    padding: 10px;
 }
 
 /* COOL BORDER ANIMATION #7 in

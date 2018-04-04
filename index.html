@@ -25,6 +25,8 @@ title: Anupya Pamidimukkala
 		    <li><div id="homeBtn">HOME</div></li>
 		    <li><div id="workBtn">WORK</div></li>
 		    <li><div id="playBtn">PLAY</div></li>
+		    <li><div id="aboutBtn">ABOUT</div></li>
+		    <li><div id="resumeBtn">RESUME</div></li>
 		</ul>
 	</div>
 
@@ -50,10 +52,9 @@ title: Anupya Pamidimukkala
 		  });
 		});
 
-          $("#homeBtn").click(function() {
+        $("#homeBtn").click(function() {
                 $('html,body').animate({
-                    scrollTop: $("#menu").offset().top},
-                    'slow');
+                    scrollTop: 0}, 'slow');
             });
         $("#workBtn").click(function() {
                 $('html,body').animate({
@@ -63,6 +64,11 @@ title: Anupya Pamidimukkala
         $("#playBtn").click(function() {
                 $('html,body').animate({
                     scrollTop: $(".play").offset().top},
+                    'slow');
+            });
+        $("#aboutBtn").click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".about").offset().top},
                     'slow');
             });
         
@@ -101,16 +107,37 @@ title: Anupya Pamidimukkala
 	  </div>
 	</section>
 
+	<!-- Solo Projects -->
+	<section class="solo">
+	  <div class="title">Solo Projects!</div>
+	  	<div class="container">
+	  		<div class="solo-item">
+		  		<img src="/assets/images/picmyallergy.png">
+		  		<a href="https://play.google.com/store/apps/details?id=com.anupya.anupya_pamidimukkala.picmyallergy" target="_blank">
+		  		<div class="overlay">
+		  			
+		  			<div class="text">An Android app that lets you snap a picture of your food and lets you know if you are allergic to it.
+		  			</div>
+		  		</div>
+	  		</div> 
+		  	<div class="solo-item">
+		  		<img src="/assets/images/fanfictionultimate.png">
+		  		<a href="https://chrome.google.com/webstore/detail/fanfictionultimate/hbhlklehlompfbncnchjocoeabddnmjl" target="_blank">
+		  		<div class="overlay">
+		  			
+		  			<div class="text">A Chrome extension that lets you read the whole story on 1 page and download it as a PDF.
+		  			</div>
+		  		</div>
+	  		</div>  
+
+	  </div>
+	</section>
+
+	<!-- Team Projects -->
 	<section class="featured">
 		<div class="title">Team Projects!</div>
 		<div class="container">
-			<!--
-			<div class="featured-item">
-				<a href="https://www.github.com/anupya/StaffDepot" target="_blank" >
-					<img src="/assets/images/StaffDepot.png">
-				</a>
-			</div>
-			-->
+
 			<div class="featured-item">
 				<img src="/assets/images/quadris.png">
 				<div class="overlay">
@@ -254,14 +281,14 @@ title: Anupya Pamidimukkala
 
         </div>
     </section>
-
-    <!-- About -->
-    <section class="about">
-    	<h2>About</h2>
-    	<div class="blurb">
-    	I am a sophomore at University of Waterloo and Wilfrid Laurier University and I'm pursuing BCS Computer Science and BBA Business Administration Double Degree. I was born in Hyderabad, India in 1998 and raised in Mumbai, Hyderabad and Toronto. <br><br>
-    	I am available for work in Jan-Apr 2019, May-Aug 2020 and May-Aug 2021.  <br> <br><br>
-    	Let's connect.
-    	</div>
-    </section>
 </div>
+
+<!-- About -->
+<section class="about">
+	<h2>About</h2>
+	<div class="blurb">
+	I am a sophomore at University of Waterloo and Wilfrid Laurier University and I'm pursuing BCS Computer Science and BBA Business Administration Double Degree. I was born in Hyderabad, India in 1998 and raised in Mumbai, Hyderabad and Toronto. <br><br>
+	I am available for work in Jan-Apr 2019, May-Aug 2020 and May-Aug 2021.  <br> <br><br>
+	Let's connect.
+	</div>
+</section>

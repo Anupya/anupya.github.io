@@ -102,24 +102,14 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
   position: absolute;
   height: 160px;
   width: 125px;
-  top: 150px;
-  right: 150px;
+  top: 350px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
   transform: rotate(-8deg);
   animation: fadein 4s;
 }
-/*
-#face:hover {
-  animation: faceexpand 0.5s;
-  width: 135px;
-  height: 175px;
-  top: -10px;
-  right: -10px;
-}
-#face:hover:after {
-  width: 125px;
-  height: 160px;
-}
-*/
+
 /* MENU */
 #menu {
     position: fixed;
@@ -210,9 +200,8 @@ h2 {
     letter-spacing: 2px;
     animation: fadein 0.4s forwards;
     animation-delay: 0.4s;
-    position: absolute;
-    height: 600px;
-    top: 200px;
+    display: block;
+    height: 10px;
     left: 0px;
     right: 0px;
     width: 75%;
@@ -223,24 +212,22 @@ h2 {
 .work {
     background: white;
     position: relative;
-    top: 500px;
+    top: 300px;
 }
 
 
 /* SOLO PROJECTS */
 .solo {
-  position: absolute;
+  display: block;
   top: 400px;
-  height: auto;
   width: 100%;
   background: #551A8B;
 }
 .solo .title {
-    position: absolute;
     font-size: 25px;
     font-weight: 300;
-    font-family: 'Courier', 'Courier New', 'Garamond', 'Times New Roman';
     top: 100px;
+    font-family: 'Courier', 'Courier New', 'Garamond', 'Times New Roman';
     left: 0px;
     right: 0px;
     color: white;
@@ -257,16 +244,15 @@ h2 {
 } 
 
 .solo-item {
+  vertical-align: top;
   position: relative;
-  width: 450px;
   display: inline-block;
+  width: 450px;
   margin: 20px;
-  top: 25px; 
+  top: 50px; 
 }
 .solo-item img {
   width: 450px;
-  top: 120px;
-  position: relative;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -278,7 +264,7 @@ h2 {
 .solo-item .overlay {
     position: relative;
     opacity: 0;
-    top: -104px;
+    top: -224px;
     width: inherit;
     height: 220px;
     cursor: pointer;
@@ -300,8 +286,7 @@ h2 {
 
 /* EMPLOYMENT */
 .timeline {
-    position: relative;
-    top: 900px;
+    display: block;
     left: 0px;
     right: 0px;
     bottom: 50px;
@@ -319,7 +304,6 @@ a {
     font-size: 25px;
     font-weight: 300;
     font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
-    position: absolute;
     top: 100px;
     left: 0px;
     right: 0px;
@@ -340,16 +324,16 @@ a {
     content: '';
     background: #B8B8B8;
     width: 5px;
-    height: 55%;
+    height: 340px;
     left: 50%;
-    top: 150px;
+    top: 800px;
     transform: translateX(-50%);
 }
 
 .timeline-item {
     width: 100%; /* keeps elements touching the main timeline */
     margin-bottom: 70px; /* spacing between the timeline dots */
-    top: 200px;
+    top: 100px;
     position: relative;
 }
 .timeline-item:nth-child(even) .timeline-content {
@@ -498,7 +482,7 @@ a {
 
 
 .featured {
-    position: absolute;
+    display: block;
     top: 1500px;
     left: 0px;
     right: 0px;
@@ -506,7 +490,6 @@ a {
     height: auto;
 }
 .featured .title {
-    position: absolute;
     font-size: 25px;
     font-weight: 300;
     font-family: 'Courier', 'Courier New', 'Garamond', 'Times New Roman';
@@ -527,9 +510,10 @@ a {
 } 
 .featured .container {
   position: relative;
-  top: 210px;
+  top: 120px;
 }
 .featured-item {
+    vertical-align: top;
     position: relative;
     display: inline-block;
     width: 300px;
@@ -610,22 +594,20 @@ a {
 .play {
     background: white;
     position: relative;
-    top: 2000px;
+    top: 300px;
 }
 .love {
     background: #EB6E80;
-    top: 400px;
+    display: block;
     height: 600px;
     left: 0px;
     right: 0px;
-    position: absolute;
 }
 .love .title { /* I write book reviews */
     font-size: 25px;
     font-weight: 300px;
     font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
-    position: absolute;
-    top: 100px;
+    display: block;
     left: 0px;
     right: 0px;
     color: white;
@@ -643,7 +625,7 @@ a {
 .jcarousel-wrapper {
     margin: 0px auto;
     position: relative;
-    top: 200px;
+    top: 100px;
     width: 800px;
     height: 100px;
 }
@@ -721,8 +703,7 @@ a {
 }
 
 .book-reviews {
-    position: absolute;
-    top: 1000px;
+    display: block;
     left: 0px;
     right: 0px;
     background: #E9B000;
@@ -752,7 +733,7 @@ a {
 .book-reviews .bookshelf--frame {
   max-width: 1000px;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
   top: 200px;
   left: 0px;
   right: 0px;
@@ -800,15 +781,13 @@ a {
 }
 
 .about {
-  position: absolute;
-  top: 4900px;
+  display: block;
   margin: 0 auto;
   width: 100%;
 }
 
 .blurb {
-  position: absolute;
-  top: 400px;
+  display: block;
   text-align: center;
   padding-left: 155px;
   padding-right: 155px;
@@ -820,8 +799,9 @@ a {
 footer{
     opacity: 0;
     width: 100%;
-    position: absolute;
-    top: 5600px;
+    display: block;
+    left: 0px;
+    right: 0px;
     cursor: pointer;
     text-decoration: none;
     animation: fadein 1s forwards;

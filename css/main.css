@@ -113,8 +113,8 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
 /* MENU */
 #menu {
     position: fixed;
-    top: 15px;
-    width: 99%;
+    top: 0px;
+    width: 100%;
     padding: 0.04px;
     text-decoration: none;
     z-index: 100;
@@ -233,7 +233,7 @@ h2 {
     color: white;
     opacity: 0;
 }
-.solo .title.in-view {
+.solo .in-view {
     opacity: 1;
     white-space: nowrap;
     animation: typewriter 3s steps(44) 1 normal both, 

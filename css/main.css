@@ -326,7 +326,6 @@ a {
     width: 5px;
     height: 340px;
     left: 50%;
-    top: 800px;
     transform: translateX(-50%);
 }
 

@@ -599,8 +599,205 @@ a {
     position: relative;
     top: 300px;
 }
-.love {
+
+/* HACKATHONS */
+.timeline-hack {
+    position: relative;
+    display: block;
+    left: 0px;
+    right: 0px;
+    bottom: 50px;
+    height: 1200px;
+    top: 300px;
     background: #EB6E80;
+}
+a {
+    list-style: none;
+    text-decoration: none;
+    float: none;
+    color: black;
+    cursor: pointer;
+}
+.timeline-hack .title { /* Hackathons */
+    position: absolute;
+    font-size: 25px;
+    font-weight: 300;
+    font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
+    top: 80px;
+    left: 0px;
+    right: 0px;
+    color: white;
+    opacity: 1;
+}
+.timeline-hack .title.in-view {
+    opacity: 1;
+    white-space: nowrap;
+    animation: typewriter 3s steps(44) 1 normal both, 
+        blinkTextCursor 500ms steps(44) infinite normal;
+    transform: translateY(-50%);
+    overflow: hidden;
+    margin: 0 auto;
+} 
+.timeline-hack .line { /*timeline line */
+    position: absolute;
+    content: '';
+    background: #B8B8B8;
+    width: 5px;
+    height: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    width: 100%; /* keeps elements touching the main timeline */
+    margin-bottom: 70px; /* spacing between the timeline dots */
+    top: 100px;
+    position: relative;
+}
+.timeline-item:nth-child(even) .timeline-content {
+    float: right;
+    padding: 40px 30px 10px 30px;
+}
+.timeline-item:nth-child(odd) .timeline-content {
+    float: left;
+    padding: 40px 30px 10px 30px;
+}
+.timeline-dot {
+    width: 30px;
+    height: 30px;
+    background:  #E9B000;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-top: 25px;
+    margin-left: -15px
+}
+.timeline-item:nth-child(even) .timeline-content::after { /* arrow pointing to the main line */
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: -15px;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #f5f5f5 transparent transparent;
+}
+.timeline-item:nth-child(odd) .timeline-content::after { /* arrow pointing to the main line */
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0px 10px 15px;
+  border-color: transparent transparent transparent #f5f5f5;
+}
+.timeline-item::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.timeline-content {
+  position: relative;
+  width: 35%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 25px -15px #000000; 
+  margin-left: 130px;
+  margin-right: 130px;
+}
+.timeline-content:hover {
+  position: relative;
+  width: 35%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #FFFFFF;
+  box-shadow: none;
+  top: 10px;
+  cursor: pointer;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 20px;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #f5f5f5;
+}
+.timeline-content .org-title {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
+}
+.timeline-content img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 70px;
+    height: 70px;
+    float: left;
+    cursor: pointer;
+}
+.timeline-content .date {
+    position: relative;
+    top: 7px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: left;
+    left: -15px;
+    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
+}
+.timeline-content p {
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+    font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
+    position: relative;
+    top: 15px;
+    left: -15px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 50px;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+}
+
+
+.love {
+    background: #E9B000;
     display: block;
     height: 600px;
     left: 0px;
@@ -703,84 +900,6 @@ a {
     color: white;
     font-stretch: ultra-condensed;
     font-weight: 100;
-}
-
-.book-reviews {
-    display: block;
-    left: 0px;
-    right: 0px;
-    background: #E9B000;
-    width: 100%;
-    height: 1200px;
-}
-.book-reviews .title { /* I write book reviews */
-    font-size: 25px;
-    font-weight: 100;
-    font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
-    position: absolute;
-    top: -100px;
-    left: 0px;
-    right: 0px;
-    color: white;
-    opacity: 1;
-}
-.book-reviews .title.in-view {
-    opacity: 1;
-    white-space: nowrap;
-    animation: typewriter 3s steps(44) 1 normal both, 
-        blinkTextCursor 500ms steps(44) infinite normal;
-    transform: translateY(-50%);
-    overflow: hidden;
-    margin: 0 auto;
-} 
-.book-reviews .bookshelf--frame {
-  max-width: 1000px;
-  margin: 0 auto;
-  position: relative;
-  top: 200px;
-  left: 0px;
-  right: 0px;
-}
-.book-reviews .bookshelf--frame {
-    background: tan;
-  background: url('/assets/images/wood.png'), 
-      linear-gradient(#323232, #373737 290px, #a8914e 290px, 
-        #a8914e 292px, #9A8548 292px, #9A8548 298px, #8c7942 298px, #8c7942 300px);
-  background-size: auto, 5px 300px;
-  border-left: 10px solid #8c7942;
-  border-right: 10px solid #8c7942;
-  text-align: center;
-}
-.book-reviews .bookshelf--frame:first-of-type {
-  border-top: 10px solid #a0581c;
-}
-.book-reviews .bookshelf--frame .book-wrapper {
-  display: inline-block;
-  width: 290px;
-  vertical-align: bottom;
-  height: 260px;
-  position: relative;
-  margin: 9px 0;
-  max-width: 100%;
-}
-.book-reviews .bookshelf--frame .book-wrapper img {
-  height: 230px;
-  width: 155px;
-  position: absolute;
-  bottom: 0;
-  left: 30%;
-  transform: translateX(-50%);
-  max-height: 100%;
-  max-width: 100%;
-  transform: skew(-3deg);
-  box-shadow: 3px #000000;
-}
-.book-reviews .bookshelf--frame .book-wrapper img:hover {
-    height: 100%;
-    width: 65%;
-    transform: skew(0deg);
-    cursor: pointer;
-    transition: ease;
 }
 
 .about {

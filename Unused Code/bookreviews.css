@@ -1,0 +1,84 @@
+/* 
+
+NOTE: I used to have a section for all my book reviews but I realize it is 
+not related to software development so I took it out. I may add it back later
+who knows O.O
+
+*/
+.book-reviews {
+    display: block;
+    left: 0px;
+    right: 0px;
+    background: #E9B000;
+    width: 100%;
+    height: 1200px;
+}
+.book-reviews .title { 
+    font-size: 25px;
+    font-weight: 100;
+    font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    right: 0px;
+    color: white;
+    opacity: 1;
+}
+.book-reviews .title.in-view {
+    opacity: 1;
+    white-space: nowrap;
+    animation: typewriter 3s steps(44) 1 normal both, 
+        blinkTextCursor 500ms steps(44) infinite normal;
+    transform: translateY(-50%);
+    overflow: hidden;
+    margin: 0 auto;
+} 
+.book-reviews .bookshelf--frame {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
+  left: 0px;
+  right: 0px;
+}
+.book-reviews .bookshelf--frame {
+    background: tan;
+  background: url('/assets/images/wood.png'), 
+      linear-gradient(#323232, #373737 290px, #a8914e 290px, 
+        #a8914e 292px, #9A8548 292px, #9A8548 298px, #8c7942 298px, #8c7942 300px);
+  background-size: auto, 5px 300px;
+  border-left: 10px solid #8c7942;
+  border-right: 10px solid #8c7942;
+  text-align: center;
+}
+.book-reviews .bookshelf--frame:first-of-type {
+  border-top: 10px solid #a0581c;
+}
+.book-reviews .bookshelf--frame .book-wrapper {
+  display: inline-block;
+  width: 290px;
+  vertical-align: bottom;
+  height: 260px;
+  position: relative;
+  margin: 9px 0;
+  max-width: 100%;
+}
+.book-reviews .bookshelf--frame .book-wrapper img {
+  height: 230px;
+  width: 155px;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  transform: translateX(-50%);
+  max-height: 100%;
+  max-width: 100%;
+  transform: skew(-3deg);
+  box-shadow: 3px #000000;
+}
+.book-reviews .bookshelf--frame .book-wrapper img:hover {
+    height: 100%;
+    width: 65%;
+    transform: skew(0deg);
+    cursor: pointer;
+    transition: ease;
+}

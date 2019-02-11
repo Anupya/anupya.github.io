@@ -251,6 +251,7 @@ h2 {
   margin: 20px;
   top: 50px; 
 }
+
 .solo-item img {
   width: 450px;
   border-radius: 10px;
@@ -261,6 +262,7 @@ h2 {
     opacity: 0.9;
     cursor: pointer;   
 }
+
 .solo-item .overlay {
     position: relative;
     opacity: 0;
@@ -290,7 +292,7 @@ h2 {
     left: 0px;
     right: 0px;
     bottom: 50px;
-    height: 700px;
+    height: 1000px;
     background: #E24E42;
 }
 a {
@@ -324,7 +326,7 @@ a {
     content: '';
     background: #B8B8B8;
     width: 5px;
-    height: 340px;
+    height: 600px;
     left: 50%;
     transform: translateX(-50%);
 }

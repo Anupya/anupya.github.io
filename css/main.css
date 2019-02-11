@@ -190,6 +190,8 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
   transition:800ms ease all;
 }
 
+
+
 h2 {
     opacity: 0;
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
@@ -255,7 +257,6 @@ h2 {
 .solo-item img {
   width: 450px;
   border-radius: 10px;
-  height: 220px;
   cursor: pointer;
 }
 

@@ -218,9 +218,9 @@ h2 {
 
 /* SOLO PROJECTS */
 .solo {
-  display: block;
+  display: flex;
   top: 400px;
-  width: 100%;
+  width: 1200px;
   background: #551A8B;
 }
 .solo .title {
@@ -292,7 +292,7 @@ h2 {
     left: 0px;
     right: 0px;
     bottom: 50px;
-    height: 1000px;
+    height: 800px;
     background: #E24E42;
 }
 a {
@@ -326,7 +326,7 @@ a {
     content: '';
     background: #B8B8B8;
     width: 5px;
-    height: 600px;
+    height: 530px;
     left: 50%;
     transform: translateX(-50%);
 }

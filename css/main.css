@@ -220,7 +220,7 @@ h2 {
 .solo {
   display: flex;
   top: 400px;
-  width: 1200px;
+  width: 100%;
   background: #551A8B;
 }
 .solo .title {

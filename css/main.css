@@ -219,14 +219,16 @@ h2 {
 /* SOLO PROJECTS */
 .solo {
   display: flex;
-  top: 400px;
+  top: 420px;
   width: 100%;
   background: #551A8B;
+  min-height: 100vh;
 }
 .solo .title {
+    position: relative;
     font-size: 25px;
     font-weight: 300;
-    top: 200px;
+    top: 150px;
     font-family: 'Courier', 'Courier New', 'Garamond', 'Times New Roman';
     left: 0px;
     right: 0px;
@@ -248,8 +250,8 @@ h2 {
   position: relative;
   display: inline-block;
   width: 450px;
-  margin: 20px;
-  top: 20px; 
+  margin: 30px;
+  top: 70px; 
 }
 
 .solo-item img {
@@ -264,9 +266,9 @@ h2 {
 }
 
 .solo-item .overlay {
-    position: relative;
+    position: absolute;
     opacity: 0;
-    top: -224px;
+    top: 0px;
     width: inherit;
     height: 220px;
     cursor: pointer;
@@ -306,7 +308,7 @@ a {
     font-size: 25px;
     font-weight: 300;
     font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
-    top: 100px;
+    top: 150px;
     left: 0px;
     right: 0px;
     color: white;
@@ -480,15 +482,13 @@ a {
 
 /* TEAM PROJECTS */
 
-
-
 .featured {
     display: block;
     top: 1500px;
     left: 0px;
     right: 0px;
     background: #008F95;
-    height: auto;
+    min-height: 110vh;
 }
 .featured .title {
     font-size: 25px;
@@ -536,14 +536,14 @@ a {
     cursor: pointer;
 }
 .featured-item .overlay {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     opacity: 0;
-    top: -304px;
-    width: 300px;
     height: 300px;
+    top: 0px;
+    width: 300px;
     align-content: center;
     border-radius: 10px;
     transition: 0.5s ease;
@@ -563,11 +563,13 @@ a {
 }
 
 .featured-item .text {
+    position: absolute;
     color: white;
     cursor: pointer;
     font-size: 16px;
     top: 300px;
     padding: 30px;
+    height: 400px;
     position: relative;
     font-weight: 100;
     text-align: center;

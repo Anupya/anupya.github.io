@@ -618,12 +618,11 @@ a {
     color: black;
     cursor: pointer;
 }
-.timeline-hack .title { /* Hackathons */
-    position: absolute;
+.timeline-hack .title { /* Jobs I've had! */
     font-size: 25px;
     font-weight: 300;
     font-family:'Courier', 'Courier New', 'Garamond', 'Times New Roman';
-    top: 80px;
+    top: 150px;
     left: 0px;
     right: 0px;
     color: white;
@@ -771,18 +770,18 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .timeline::before {
+  .timeline-hack::before {
     left: 50px;
   }
-  .timeline .timeline-content {
+  .timeline-hack .timeline-content {
     max-width: 100%;
     width: auto;
     margin-left: 70px;
   }
-  .timeline .timeline-item:nth-child(even) .timeline-content {
+  .timeline-hack .timeline-item:nth-child(even) .timeline-content {
     float: none;
   }
-  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+  .timeline-hack .timeline-item:nth-child(odd) .timeline-content::after {
     content: '';
     position: absolute;
     border-style: solid;

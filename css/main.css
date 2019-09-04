@@ -115,7 +115,7 @@ body { /* CHANGE BACKGROUND COLOR HERE TO CHANGE THE ACTUAL BACKGROUND */
     position: fixed;
     top: 0px;
     width: 100%;
-    padding: 0.04px;
+    /*padding: 0.04px;*/
     text-decoration: none;
     z-index: 100;
     color: white;
@@ -294,7 +294,7 @@ h2 {
     display: block;
     left: 0px;
     right: 0px;
-    height: 110vh;
+    height: 130vh;
     background: #E24E42;
 }
 a {
@@ -518,7 +518,7 @@ a {
     width: 300px;
     cursor: pointer;
     margin: 20px;
-    min-height: 70vh;
+    min-height: 80vh;
 }
 .featured-item:hover .overlay {
     right: 2px;

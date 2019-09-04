@@ -294,7 +294,7 @@ h2 {
     display: block;
     left: 0px;
     right: 0px;
-    height: 130vh;
+    height: 900px;
     background: #E24E42;
 }
 a {
@@ -518,7 +518,7 @@ a {
     width: 300px;
     cursor: pointer;
     margin: 20px;
-    min-height: 80vh;
+    min-height: 600px;
 }
 .featured-item:hover .overlay {
     right: 2px;

@@ -1,3 +1,3 @@
 # anupya.github.io
 
-This is a README.md.
+Clone this repo. Go to ../anupya.github.io in terminal. Run bundle exec jekyll serve.

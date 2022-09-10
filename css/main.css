@@ -116,7 +116,7 @@ canvas {
 
 .about {
   display: block;
-  margin: 0 auto;
+  margin: 2rem auto auto auto;
   width: 100%;
 }
 
@@ -148,6 +148,7 @@ canvas {
 #menu {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     text-decoration: none;
     z-index: 100;
@@ -158,6 +159,12 @@ canvas {
     background: black;
     padding: none;
     height: 5.5rem;
+}
+
+#menu-list {
+    position: absolute;
+    left: -7%;
+    right: 0;
 }
 
 #menu li {
@@ -173,7 +180,7 @@ canvas {
 }
 
 #menu div:hover {
-  color: var(--red);
+  color: var(--blue);
 }
 
 #resumeBtn {
@@ -199,7 +206,7 @@ canvas {
 .work {
     background: white;
     position: relative;
-    top: 30rem;
+    top: 20rem;
 }
 
 /* ---------------------------------- */
@@ -285,7 +292,7 @@ canvas {
     display: block;
     left: 0;
     right: 0;
-    height: 87rem;
+    height: 93rem;
     background: #E24E42;
 }
 
@@ -323,7 +330,7 @@ a {
     content: '';
     background: #B8B8B8;
     width: 0.5rem;
-    height: 58rem;
+    height: 70rem;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -486,7 +493,7 @@ a {
     left: 0px;
     right: 0px;
     background: #008F95;
-    min-height: 110vh;
+    height: 76rem;
 }
 .featured .title {
     font-size: 25px;
@@ -518,7 +525,7 @@ a {
     width: 300px;
     cursor: pointer;
     margin: 20px;
-    min-height: 600px;
+    height: 26rem;
 }
 .featured-item:hover .overlay {
     right: 2px;
@@ -798,9 +805,9 @@ a {
 .love {
     background: #E9B000;
     display: block;
-    height: 600px;
-    left: 0px;
-    right: 0px;
+    height: 38rem;
+    left: 0;
+    right: 0;
     padding-bottom: 3rem;
 }
 
@@ -904,23 +911,15 @@ a {
     font-weight: 100;
 }
 
-.footer{
-    opacity: 0;
-    width: 100%;
-    display: block;
-    left: 0px;
-    right: 0px;
-    cursor: pointer;
-    text-decoration: none;
-    animation: fadein 1s forwards;
-    animation-delay: 1s;
-}
-
 
 /* ---------------------------------- */
 /* CONTACT ME */
 
 .social {
+    height: 5rem;
+}
+
+.social-links {
     font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
     padding: 10px;
     list-style: none;
@@ -928,19 +927,22 @@ a {
     width: auto;
     cursor: pointer;
 }
-.social svg {
+.social-links svg {
     transition: 200ms ease-out;
     width: 35px;
     height: 35px;
     cursor: pointer;
 }
-.social svg:hover {
+.social-links svg:hover {
     fill: #D0D0D0;
     cursor: pointer;
 
 }
-.social li {
+.social-links li {
     cursor: pointer;
     display: inline-block;
     padding: 10px;
+}
+.social-links li:marker {
+    display: none;
 }

@@ -216,7 +216,7 @@ canvas {
     display: block;
     left: 0;
     right: 0;
-    height: 100rem;
+    height: 105rem;
     background: #E24E42;
 }
 
@@ -254,7 +254,7 @@ a {
     content: '';
     background: #B8B8B8;
     width: 0.5rem;
-    height: 70rem;
+    height: 75rem;
     left: 50%;
     transform: translateX(-50%);
 }

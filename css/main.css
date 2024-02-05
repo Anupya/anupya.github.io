@@ -210,89 +210,13 @@ canvas {
 }
 
 /* ---------------------------------- */
-/* SOLO PROJECTS */
-
-.solo {
-  display: flex;
-  top: 42rem;
-  width: 100%;
-  background: var(--purple);
-  min-height: 75rem;
-}
-
-.solo .title {
-    position: absolute;
-    top: 10vh;
-    font-size: 25px;
-    font-weight: 300;
-    font-family: 'Courier', 'Courier New', 'Garamond', 'Times New Roman';
-    left: 0;
-    right: 0;
-    color: white;
-    opacity: 0;
-}
-
-.solo .in-view {
-    opacity: 1;
-    white-space: nowrap;
-    animation: typewriter 3s steps(44) 1 normal both, 
-        blinkTextCursor 500ms steps(44) infinite normal;
-    transform: translateY(-50%);
-    overflow: hidden;
-    margin: 0 auto;
-} 
-
-.solo-item {
-  vertical-align: top;
-  position: relative;
-  display: inline-block;
-  width: 30rem;
-  margin: 3rem;
-}
-
-.solo-item img {
-  width: 30rem;
-  border-radius: 1rem;
-  cursor: pointer;
-}
-
-.solo-item:hover .overlay {
-    opacity: 0.9;
-    cursor: pointer;   
-}
-
-.solo-item .overlay {
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    width: inherit;
-    height: 14.6rem;
-    cursor: pointer;
-    border-radius: 1rem;
-    transition: 0.5s ease;
-    background-color: #190729;
-}
-
-.solo-item .text {
-    position: relative;
-    text-align: center;
-    color: #D0D0D0;
-    cursor: pointer;
-    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
-    font-size: 1rem;
-    font-weight: 100;
-    top: 25%;
-    padding: 2rem;
-}
-
-/* ---------------------------------- */
 /* WORK */
 
 .timeline {
     display: block;
     left: 0;
     right: 0;
-    height: 96rem;
+    height: 100rem;
     background: #E24E42;
 }
 
@@ -484,6 +408,81 @@ a {
     border-color: transparent #f5f5f5 transparent transparent;
   }
 }
+
+/* ---------------------------------- */
+/* SOLO PROJECTS */
+
+.solo {
+  display: block;
+  width: 100%;
+  background: var(--purple);
+  min-height: 75rem;
+}
+
+.solo .title {
+    top: 10vh;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Courier', 'Courier New', 'Garamond', 'Times New Roman';
+    left: 0;
+    right: 0;
+    color: white;
+    opacity: 0;
+}
+
+.solo .in-view {
+    opacity: 1;
+    white-space: nowrap;
+    animation: typewriter 3s steps(44) 1 normal both, 
+        blinkTextCursor 500ms steps(44) infinite normal;
+    transform: translateY(-50%);
+    overflow: hidden;
+    margin: 0 auto;
+} 
+
+.solo-item {
+  vertical-align: top;
+  position: relative;
+  display: inline-block;
+  width: 30rem;
+  margin: 3rem;
+}
+
+.solo-item img {
+  width: 30rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.solo-item:hover .overlay {
+    opacity: 0.9;
+    cursor: pointer;   
+}
+
+.solo-item .overlay {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    width: inherit;
+    height: 14.6rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: 0.5s ease;
+    background-color: #190729;
+}
+
+.solo-item .text {
+    position: relative;
+    text-align: center;
+    color: #D0D0D0;
+    cursor: pointer;
+    font-family: 'Open Sans', 'Trebuchet MS', 'Arial';
+    font-size: 1rem;
+    font-weight: 100;
+    top: 25%;
+    padding: 2rem;
+}
+
 
 /* ---------------------------------- */
 /* TEAM PROJECTS */

@@ -7,7 +7,9 @@ title: Anupya Pamidimukkala
 <script src="/assets/js/scroll.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="/assets/js/scroll.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
 
@@ -16,51 +18,63 @@ title: Anupya Pamidimukkala
 
 
 <nav>
-    <div id="menu">
-	    <ul id="menu-list">
-		    <li><div id="homeBtn">HOME</div></li>
-		    <li><div id="aboutBtn">ABOUT</div></li>
-		    <li><div id="workBtn">WORK</div></li>
-		    <li><div id="playBtn">PLAY</div></li>
-		    
-		    <li><a href="AnupyaResume.pdf" target="_blank">
-		    	<input id="resumeBtn" value="RESUME" type="button">
-		    	 </a>
-		    	</div>
+	<div id="menu">
+		<ul id="menu-list">
+			<li>
+				<div id="homeBtn">HOME</div>
 			</li>
-		</ul>
+			<li>
+				<div id="aboutBtn">ABOUT</div>
+			</li>
+			<li>
+				<div id="workBtn">WORK</div>
+			</li>
+			<li>
+				<div id="playBtn">PLAY</div>
+			</li>
+
+			<li><a href="AnupyaResume.pdf" target="_blank">
+					<input id="resumeBtn" value="RESUME" type="button">
+				</a>
+	</div>
+	</li>
+	</ul>
 	</div>
 
-    <script>
+	<script>
 
-        $("#homeBtn").click(function() {
-                $('html,body').animate({
-                    scrollTop: 0}, 'slow');
-            });
-        $("#workBtn").click(function() {
-                $('html,body').animate({
-                    scrollTop: $("#workdder").offset().top},
-                    'slow');
-            });
-        $("#playBtn").click(function() {
-                $('html,body').animate({
-                    scrollTop: $("#playdder").offset().top},
-                    'slow');
-            });
-        $("#aboutBtn").click(function() {
-                $('html,body').animate({
-                    scrollTop: $("#aboutdderhidden").offset().top},
-                    'slow');
-            });
-        
-    </script>
+		$("#homeBtn").click(function () {
+			$('html,body').animate({
+				scrollTop: 0
+			}, 'slow');
+		});
+		$("#workBtn").click(function () {
+			$('html,body').animate({
+				scrollTop: $("#workdder").offset().top
+			},
+				'slow');
+		});
+		$("#playBtn").click(function () {
+			$('html,body').animate({
+				scrollTop: $("#playdder").offset().top
+			},
+				'slow');
+		});
+		$("#aboutBtn").click(function () {
+			$('html,body').animate({
+				scrollTop: $("#aboutdderhidden").offset().top
+			},
+				'slow');
+		});
+
+	</script>
 </nav>
 
 <canvas></canvas>
 <div class="bio">
 	<div class="myName">Hi! I'm Anupya.</div>
 	<div>She/Her | Software Engineer</div>
-    <img id="face" src="/assets/images/face.png">
+	<img id="face" src="/assets/images/face.png">
 </div>
 
 <divider id="aboutdderhidden" style="display: block;"></divider>
@@ -72,14 +86,21 @@ title: Anupya Pamidimukkala
 	<h2>About</h2>
 	<br><br><br><br><br><br><br><br>
 	<div class="blurb">
-	I am a Software Engineer currently looking for full-time work! I am passionate about full-stack development and exploring new technologies. I graduated from University of Waterloo in June 2021. I currently live in Weehawken, NJ - right across the river from NYC.<br><br>
-	Let's connect.
+		I am a Software Engineer currently looking for full-time work! I am passionate about full-stack development and
+		working together to find the best solution to a problem.
+		<br><br>
+		I graduated from University of Waterloo in Canada.
+		<br><br>
+		I currently live in Weehawken, NJ, right across the river from NYC.
+		<br><br>
+		<i>Let's connect.</i>
 	</div>
 </section>
 
-<divider id="workdder" style="position: absolute; top:81rem;"></divider>
+<divider id="workdder" style="position: absolute; top:82rem;"></divider>
 <br><br><br><br>
-<divider id="aboutdderbottom" style="display: block; width:400px; border-top: 3px solid #3591fe; margin: 0 auto;"></divider>
+<divider id="aboutdderbottom" style="display: block; width:400px; border-top: 3px solid #3591fe; margin: 0 auto;">
+</divider>
 <br><br><br><br><br><br><br><br><br><br><br><br>
 
 <h2>Work</h2>
@@ -88,207 +109,228 @@ title: Anupya Pamidimukkala
 	<!-- Employment -->
 	<section class="timeline">
 		<br><br><br><br>
-	  <div class="title">Employment</div>
-	  	<div class="container">
-	  		<br><br><br><br>
-	  		<div class="line"></div>
+		<div class="title">Employment</div>
+		<div class="container">
+			<br><br><br><br>
+			<div class="line"></div>
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				<a href="https://www.getrecharge.com" target="_blank" id="recharge">
+					<div class="timeline-content js--fadeInLeft">
+						<div class="org-title"> Recharge </div>
+
+						<img src="/assets/images/recharge.png">
+						<div class="date">Oct 2024 - present</div>
+						<p>Senior Software Engineer</p>
+					</div>
+				</a>
+			</div>
 			<div class="timeline-item">
 				<div class="timeline-dot"></div>
 				<a href="https://www.clerq.io" target="_blank" id="clerq">
 					<div class="timeline-content js--fadeInLeft">
 						<div class="org-title"> Clerq </div>
-						
-							<img src="/assets/images/clerq.png">
+
+						<img src="/assets/images/clerq.png">
 						<div class="date">Mar 2024 - May 2024</div>
 						<p>Senior Software Engineer</p>
 					</div>
 				</a>
-		    </div> 
+			</div>
 			<div class="timeline-item">
-		    	<div class="timeline-dot"></div>
-		    	<a href="https://medium.com/@anupya/the-key-to-a-strong-engineering-culture-managing-mistakes-bb76309c7d11" target="_blank" id="sym">
-			      	<div class="timeline-content js--fadeInLeft">
-				        <div class="org-title"> Sym </div>
-				       	
-				    		<img src="/assets/images/sym.png">
-				       	<div class="date">Nov 2022 - Mar 2024</div>
-				        <p>Software Engineer</p>
-			      	</div>
-		      	</a>
-		    </div> 
-	  		<div class="timeline-item">
-		    	<div class="timeline-dot"></div>
-		    	<a href="https://tech.bolt.com/the-mystery-caller-91b05cfb7fdc" target="_blank" id="bolt">
-			      	<div class="timeline-content js--fadeInLeft">
-				        <div class="org-title"> Bolt </div>
-				       	
-				    		<img src="/assets/images/bolt.png">
-				       	<div class="date">Jul 2021 - Nov 2022</div>
-				        <p>Software Engineer</p>
-			      	</div>
-		      	</a>
-		    </div> 
-	  		<div class="timeline-item">
-		    	<div class="timeline-dot"></div>
-		    	<a href="https://www.oracle.com/" target="_blank" id="oracle">
-			      	<div class="timeline-content js--fadeInLeft">
-				        <div class="org-title"> Oracle </div>
-				       	
-				    		<img src="/assets/images/oracle.jpeg">
-				       	<div class="date">Sep 2020 - Dec 2020</div>
-				        <p>Software Developer Intern</p>
-			      	</div>
-		      	</a>
-		    </div> 
-	  		<div class="timeline-item">
-		    	<div class="timeline-dot"></div>
-		    	<a href="https://www.wisesystems.com/" target="_blank" id="wise">
-			      	<div class="timeline-content js--fadeInLeft">
-				        <div class="org-title"> Wise Systems </div>
-				       	
-				    		<img src="/assets/images/wise.jpeg">
-				       	<div class="date">Jan 2020 - Apr 2020</div>
-				        <p>Software Developer Intern</p>
-			      	</div>
-		      	</a>
-		    </div> 
-	  		<div class="timeline-item">
-		    	<div class="timeline-dot"></div>
-		    	<a href="https://www.bmo.com/" target="_blank" id="bmo">
-			      	<div class="timeline-content js--fadeInLeft">
-				        <div class="org-title"> Bank of Montreal </div>
-				       	
-				    		<img src="/assets/images/bmo.jpeg">
-				       	<div class="date">Jan 2019 - Apr 2019</div>
-				        <p>Software Developer Intern</p>
-			      	</div>
-		      	</a>
-		    </div> 
-		  	<div class="timeline-item">
-		  		<div class="timeline-dot"></div>
-		  		<a href="https://www.symantec.com/" target="_blank" id="symantec">
-				    <div class="timeline-content js--fadeInRight">
-				     	<div class="org-title"> Symantec </div>
-				        
-				    		<img src="/assets/images/symantec.png">
-				        <div class="date">Jan 2018 - Apr 2018</div>
-				        <p>Quality Assurance Intern</p>
-				    </div>
-			    </a>
-	  		</div>  
-		    <div class="timeline-item">
-		    	<div class="timeline-dot"></div>
-		    	<a href="https://www.iotum.com/" target="_blank" id="iotum">
-			      	<div class="timeline-content js--fadeInLeft">
-				        <div class="org-title"> Iotum </div>
-				       	
-				    		<img src="/assets/images/iotum.png">
-				       	<div class="date">May 2017 - Aug 2017</div>
-				        <p>Quality Assurance Intern</p>
-			      	</div>
-		      	</a>
-		    </div> 
-	  </div>
+				<div class="timeline-dot"></div>
+				<a href="https://medium.com/@anupya/the-key-to-a-strong-engineering-culture-managing-mistakes-bb76309c7d11"
+					target="_blank" id="sym">
+					<div class="timeline-content js--fadeInLeft">
+						<div class="org-title"> Sym </div>
+
+						<img src="/assets/images/sym.png">
+						<div class="date">Nov 2022 - Mar 2024</div>
+						<p>Software Engineer</p>
+					</div>
+				</a>
+			</div>
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				<a href="https://tech.bolt.com/the-mystery-caller-91b05cfb7fdc" target="_blank" id="bolt">
+					<div class="timeline-content js--fadeInLeft">
+						<div class="org-title"> Bolt </div>
+
+						<img src="/assets/images/bolt.png">
+						<div class="date">Jul 2021 - Nov 2022</div>
+						<p>Software Engineer</p>
+					</div>
+				</a>
+			</div>
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				<a href="https://www.oracle.com/" target="_blank" id="oracle">
+					<div class="timeline-content js--fadeInLeft">
+						<div class="org-title"> Oracle </div>
+
+						<img src="/assets/images/oracle.jpeg">
+						<div class="date">Sep 2020 - Dec 2020</div>
+						<p>Software Developer Intern</p>
+					</div>
+				</a>
+			</div>
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				<a href="https://www.wisesystems.com/" target="_blank" id="wise">
+					<div class="timeline-content js--fadeInLeft">
+						<div class="org-title"> Wise Systems </div>
+
+						<img src="/assets/images/wise.jpeg">
+						<div class="date">Jan 2020 - Apr 2020</div>
+						<p>Software Developer Intern</p>
+					</div>
+				</a>
+			</div>
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				<a href="https://www.bmo.com/" target="_blank" id="bmo">
+					<div class="timeline-content js--fadeInLeft">
+						<div class="org-title"> Bank of Montreal </div>
+
+						<img src="/assets/images/bmo.jpeg">
+						<div class="date">Jan 2019 - Apr 2019</div>
+						<p>Software Developer Intern</p>
+					</div>
+				</a>
+			</div>
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				<a href="https://www.symantec.com/" target="_blank" id="symantec">
+					<div class="timeline-content js--fadeInRight">
+						<div class="org-title"> Symantec (now Broadcom) </div>
+
+						<img src="/assets/images/symantec.png">
+						<div class="date">Jan 2018 - Apr 2018</div>
+						<p>Quality Assurance Intern</p>
+					</div>
+				</a>
+			</div>
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				<a href="https://www.iotum.com/" target="_blank" id="iotum">
+					<div class="timeline-content js--fadeInLeft">
+						<div class="org-title"> Iotum </div>
+
+						<img src="/assets/images/iotum.png">
+						<div class="date">May 2017 - Aug 2017</div>
+						<p>Quality Assurance Intern</p>
+					</div>
+				</a>
+			</div>
+		</div>
 	</section>
 
 	<!-- Solo Projects -->
 	<section class="solo">
 		<br><br><br><br><br>
-	  <div class="title">Side Projects</div>
-	  	<div class="container">
-	  		<div class="solo-item">
-		  		<img src="/assets/images/japanesetab.png">
-		  		<a href="https://www.producthunt.com/posts/japanesetab" target="_blank">
-		  		<div class="overlay">
-		  			
-		  			<div class="text">A Chrome Extension that helps you learn Japanese without even realizing it. Over 1100 users worldwide. #3 Product of the Day on ProductHunt.
-		  			</div>
-		  		</div>
-	  		</div> 
-	  		<div class="solo-item">
-		  		<img src="/assets/images/year-of-marvel.png">
-		  		<a href="https://year-of-marvel.herokuapp.com" target="_blank">
-		  		<div class="overlay">
-		  			
-		  			<div class="text">A Web Application that returns all Marvel comics released in a particular year. Built with Marvel API.
-		  			</div>
-		  		</div>
-	  		</div> 
-	  		<div class="solo-item">
-		  		<img src="/assets/images/dadjoke-cli.png">
-		  		<a href="https://www.producthunt.com/posts/dad-joke-cli" target="_blank">
-		  		<div class="overlay">
-		  			
-		  			<div class="text">A Command Line Interface that brings the freshest dad jokes straight to your terminal. #5 Product of the Day on ProductHunt.
-		  			</div>
-		  		</div>
-	  		</div> 
-	  		<div class="solo-item">
-		  		<img src="/assets/images/picmyallergy.PNG">
-		  		<a href="https://codesandbox.io/p/devbox/pic-my-allergy-l8g96g" target="_blank">
-		  		<div class="overlay">
-		  			
-		  			<div class="text">An Android app that reads a picture of  food and tells you if you might be allergic to the ingredients. Recognizes over 900 food constituents.
-		  			</div>
-		  		</div>
-	  		</div> 
-		  	<div class="solo-item">
-		  		<img src="/assets/images/fanfictionultimate.PNG">
-		  		<a href="https://chrome.google.com/webstore/detail/fanfictionultimate/hbhlklehlompfbncnchjocoeabddnmjl" target="_blank">
-		  		<div class="overlay">
-		  			
-		  			<div class="text">A Chrome extension that lets you read the whole story on one page and download it as a PDF.
-		  			</div>
-		  		</div>
-	  		</div>  
-	  </div>
+		<div class="title">Side Projects</div>
+		<div class="container">
+			<div class="solo-item">
+				<img src="/assets/images/japanesetab.png">
+				<a href="https://www.producthunt.com/posts/japanesetab" target="_blank">
+					<div class="overlay">
+
+						<div class="text">A Chrome Extension that helps you learn Japanese without even realizing it.
+							Over 1100 users worldwide. #3 Product of the Day on ProductHunt.
+						</div>
+					</div>
+			</div>
+			<div class="solo-item">
+				<img src="/assets/images/year-of-marvel.png">
+				<a href="https://year-of-marvel.herokuapp.com" target="_blank">
+					<div class="overlay">
+
+						<div class="text">A Web Application that returns all Marvel comics released in a particular
+							year. Built with Marvel API.
+						</div>
+					</div>
+			</div>
+			<div class="solo-item">
+				<img src="/assets/images/dadjoke-cli.png">
+				<a href="https://www.producthunt.com/posts/dad-joke-cli" target="_blank">
+					<div class="overlay">
+
+						<div class="text">A Command Line Interface that brings the freshest dad jokes straight to your
+							terminal. #5 Product of the Day on ProductHunt.
+						</div>
+					</div>
+			</div>
+			<div class="solo-item">
+				<img src="/assets/images/picmyallergy.PNG">
+				<a href="https://codesandbox.io/p/devbox/pic-my-allergy-l8g96g" target="_blank">
+					<div class="overlay">
+
+						<div class="text">An Android app that reads a picture of food and tells you if you might be
+							allergic to the ingredients. Recognizes over 900 food constituents.
+						</div>
+					</div>
+			</div>
+			<div class="solo-item">
+				<img src="/assets/images/fanfictionultimate.PNG">
+				<a href="https://chrome.google.com/webstore/detail/fanfictionultimate/hbhlklehlompfbncnchjocoeabddnmjl"
+					target="_blank">
+					<div class="overlay">
+
+						<div class="text">A Chrome extension that lets you read the whole story on one page and download
+							it as a PDF.
+						</div>
+					</div>
+			</div>
+		</div>
 	</section>
 
 	<!-- Team Projects -->
-	<section class="featured">
+	<!-- <section class="featured">
 		<br><br><br><br><br>
 		<div class="title">Team Projects</div>
 		<div class="container">
-
 			<div class="featured-item">
 				<img src="/assets/images/instalearn.png">
 				<div class="overlay">
 					<div class="header">INSTA LEARN</div>
-					<div class="text">An education app with Instagram UI. Created for ElleHacks 2019. 
+					<div class="text">An education app with Instagram UI. Created for ElleHacks 2019.
 					</div>
-				</div> 
+				</div>
 			</div>
 			<div class="featured-item">
 				<img src="/assets/images/quadris.png">
 				<div class="overlay">
 					<div class="header">QUADRIS</div>
-					<div class="text">A version of Tetris developed for the CS246 (Object-Oriented Programming) final project. 
+					<div class="text">A version of Tetris developed for the CS246 (Object-Oriented Programming) final
+						project.
 					</div>
-				</div> 
+				</div>
 			</div>
 			<div class="featured-item">
-				<a href="https://www.youtube.com/watch?v=Utw9QRVpE8g" target="_blank" >
+				<a href="https://www.youtube.com/watch?v=Utw9QRVpE8g" target="_blank">
 					<img src="/assets/images/bigDataChallenge.png">
 					<div class="overlay">
 						<div class="header">DIVING INTO DEBT </div>
-						<div class="text">Developed a solution for various problems in the city by using data analysis of the City of Toronto's worksheets and SAS.
+						<div class="text">Developed a solution for various problems in the city by using data analysis
+							of the City of Toronto's worksheets and SAS.
 						</div>
-					</div> 
+					</div>
 				</a>
 			</div>
 			<div class="featured-item">
-				<a href="https://journal.stemfellowship.org/doi/abs/10.17975/sfj-2015-006" target="_blank" >
+				<a href="https://journal.stemfellowship.org/doi/abs/10.17975/sfj-2015-006" target="_blank">
 					<img src="/assets/images/tvShows.png">
 					<div class="overlay">
 						<div class="header">TWITTER AND TV </div>
-						<div class="text">Collected tweets about popular TV shows using Python and Twitter API and wrote a research paper discussing the results. 
+						<div class="text">Collected tweets about popular TV shows using Python and Twitter API and wrote
+							a research paper discussing the results.
 						</div>
-					</div> 
+					</div>
 				</a>
 			</div>
 		</div>
-		</div>
-	</section>
+</div>
+</section> -->
 
 	<section class="awards">
 		<div class="container">
@@ -299,7 +341,7 @@ title: Anupya Pamidimukkala
 	</section>
 </div>
 
-<divider id="playdder" style="position: absolute; top: 359rem;"></divider>
+<divider id="playdder" style="position: absolute; top: 322rem;"></divider>
 
 
 <div class="play">
@@ -309,163 +351,188 @@ title: Anupya Pamidimukkala
 	<!-- Hackathons -->
 	<section class="timeline-hack">
 		<br><br><br><br>
-	  <div class="title">Hackathons</div>
-	  	<div class="container">
-	  		<br><br><br><br>
-	  		<div class="line"></div>
-	  		<div class="timeline-item">
-		    	<div class="timeline-dot"></div>
-		    	<a href="https://github.com/Anupya/InstaLearn" target="_blank" id="ellehacks2019">
-			      	<div class="timeline-content js--fadeInLeft">
-				        <div class="org-title"> ElleHacks </div>
-				       	
-				    		<img src="/assets/images/ellehacks2019.jpeg">
-				       	<div class="date">Feb 2019</div>
-				        <p>InstaLearn - Built an Android app with Instagram UI for education</p>
-			      	</div>
-		      	</a>
-		    </div> 
-		  	<div class="timeline-item">
-		  		<div class="timeline-dot"></div>
-		  		<a href="https://github.com/teamfasa/ellehacks" target="_blank" id="ellehacks2018">
-				    <div class="timeline-content js--fadeInRight">
-				     	<div class="org-title"> ElleHacks </div>
-				        
-				    		<img src="/assets/images/ellehacks2018.svg">
-				        <div class="date">Feb 2018</div>
-				        <p>StaffDepot - Developed an Android app to increase employee loyalty and engagement </p>
-				    </div>
-			    </a>
-	  		</div>  
-		    <div class="timeline-item">
-		    	<div class="timeline-dot"></div>
-		    	<a href="https://github.com/Anupya/low-key" target="_blank" id="starterhacks">
-			      	<div class="timeline-content js--fadeInLeft">
-				        <div class="org-title"> StarterHacks </div>
-				       	
-				    		<img src="/assets/images/starterhacks.png">
-				       	<div class="date">March 2018</div>
-				        <p>Low Key - Created a Node.js web application to help up-and-coming musicians find the audience they want</p>
-			      	</div>
-		      	</a>
-		    </div> 
-		    <div class="timeline-item">
-		    	<div class="timeline-dot"></div>
-		    	<a href="https://docs.google.com/presentation/d/1hM3-vqSXOVBBjar9SG_hElXdmLjhNJ5O0sotMDqn2Kk/edit?usp=sharing" target="_blank" id="equithon">
-			      	<div class="timeline-content js--fadeInLeft">
-				        <div class="org-title"> Equithon </div>
-				       	
-				    		<img src="/assets/images/equithon.png">
-				       	<div class="date">Nov 2016</div>
-				        <p>Devs Without Borders - Developed a Twilio app where Bangladeshi women can receive free pregnancy advice whenever they want</p>
-			      	</div>
-		      	</a>
-		    </div> 
-	  </div>
+		<div class="title">Hackathons</div>
+		<div class="container">
+			<br><br><br><br>
+			<div class="line"></div>
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				<a href="https://github.com/Anupya/InstaLearn" target="_blank" id="ellehacks2019">
+					<div class="timeline-content js--fadeInLeft">
+						<div class="org-title"> ElleHacks </div>
+
+						<img src="/assets/images/ellehacks2019.jpeg">
+						<div class="date">Feb 2019</div>
+						<p>InstaLearn - Built an Android app with Instagram UI for education</p>
+					</div>
+				</a>
+			</div>
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				<a href="https://github.com/teamfasa/ellehacks" target="_blank" id="ellehacks2018">
+					<div class="timeline-content js--fadeInRight">
+						<div class="org-title"> ElleHacks </div>
+
+						<img src="/assets/images/ellehacks2018.svg">
+						<div class="date">Feb 2018</div>
+						<p>StaffDepot - Developed an Android app to increase employee loyalty and engagement </p>
+					</div>
+				</a>
+			</div>
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				<a href="https://github.com/Anupya/low-key" target="_blank" id="starterhacks">
+					<div class="timeline-content js--fadeInLeft">
+						<div class="org-title"> StarterHacks </div>
+
+						<img src="/assets/images/starterhacks.png">
+						<div class="date">March 2018</div>
+						<p>Low Key - Created a Node.js web application to help up-and-coming musicians find the audience
+							they want</p>
+					</div>
+				</a>
+			</div>
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				<a href="https://docs.google.com/presentation/d/1hM3-vqSXOVBBjar9SG_hElXdmLjhNJ5O0sotMDqn2Kk/edit?usp=sharing"
+					target="_blank" id="equithon">
+					<div class="timeline-content js--fadeInLeft">
+						<div class="org-title"> Equithon </div>
+
+						<img src="/assets/images/equithon.png">
+						<div class="date">Nov 2016</div>
+						<p>Devs Without Borders - Developed a Twilio app where Bangladeshi women can receive free
+							pregnancy advice whenever they want</p>
+					</div>
+				</a>
+			</div>
+		</div>
 	</section>
 
 
-    <!-- Love -->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <section class="love">
-    	<br><br><br><br><br>
-        <div class="title"> Interests</div>
+	<!-- Love -->
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<section class="love">
+		<br><br><br><br><br>
+		<div class="title"> Interests</div>
 
-        <div class="jcarousel-wrapper">
-            <div class="jcarousel" data-jcarousel="true">
-                <ul style="left: -303px; top: 0px;">
-                    <li><img title="RIVERDALE" src="/assets/images/hp.png"></li>
-                    <li><img title="APPLE PENCIL" src="/assets/images/jdrama.png"></li>
-                    <li><img title="SUPERNATURAL" src="/assets/images/riverdale.png"></li>
-                    <li><img title="BADMINTON" src="/assets/images/applepencil.png"></li>
-                    <li><img title="FAN CONVENTIONS" src="/assets/images/spn.png"></li>
-                    <li><img title="DOCTOR WHO" src="/assets/images/badminton.png"></li>
-                    <li><img title="INDIAN FOOD" src="/assets/images/fanconventions.png"></li>
-                    <li><img title="CHESS" src="/assets/images/doctorwho.png"></li>
-                    <li><img title="BOLLYWOOD" src="/assets/images/indianfood.png"></li>
-                    <li><img title="HARRY POTTER" src="/assets/images/chess.png"></li>
-                    <li><img title="JAPANESE DRAMAS" src="/assets/images/bollywood.png"></li>
-                </ul>
-            </div>
-            <div class="image-caption"></div>
-            <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true"><img src="/assets/images/love-left.png"></a>
-            <a href="#" class="jcarousel-control-next inactive" data-jcarouselcontrol="true"><img src="/assets/images/love-right.png"></a>
-        </div>
-    </section>
+		<div class="jcarousel-wrapper">
+			<div class="jcarousel" data-jcarousel="true">
+				<ul style="left: -303px; top: 0px;">
+					<li><img title="RIVERDALE" src="/assets/images/hp.png"></li>
+					<li><img title="APPLE PENCIL" src="/assets/images/jdrama.png"></li>
+					<li><img title="SUPERNATURAL" src="/assets/images/riverdale.png"></li>
+					<li><img title="BADMINTON" src="/assets/images/applepencil.png"></li>
+					<li><img title="FAN CONVENTIONS" src="/assets/images/spn.png"></li>
+					<li><img title="DOCTOR WHO" src="/assets/images/badminton.png"></li>
+					<li><img title="INDIAN FOOD" src="/assets/images/fanconventions.png"></li>
+					<li><img title="CHESS" src="/assets/images/doctorwho.png"></li>
+					<li><img title="BOLLYWOOD" src="/assets/images/indianfood.png"></li>
+					<li><img title="HARRY POTTER" src="/assets/images/chess.png"></li>
+					<li><img title="JAPANESE DRAMAS" src="/assets/images/bollywood.png"></li>
+				</ul>
+			</div>
+			<div class="image-caption"></div>
+			<a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true"><img
+					src="/assets/images/love-left.png"></a>
+			<a href="#" class="jcarousel-control-next inactive" data-jcarouselcontrol="true"><img
+					src="/assets/images/love-right.png"></a>
+		</div>
+	</section>
 
-    <section class="social">
+	<section class="social">
 		<ul class="social-links">
 
-		     <!-- GITHUB -->
-		     <li>
-		     	<a href="https://www.github.com/anupya" target="_blank"> 
-		     		<svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg>
-		     	</a>
-		     </li>
-
-		     <!-- TWITTER -->
-		     <li>
-		     	<a href="https://twitter.com/anupyadeveloper" target="_blank"> 
-		     		<svg viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/></svg>
-		     	</a>
-		     </li>
-
-		     <!-- LINKEDIN -->
-		     <li>
-		     	<a href="https://www.linkedin.com/in/anupya" target="_blank">
-		     		<svg viewBox="0 0 512 512"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/></svg>
-		     	</a>
-		     </li>
-
-		     <!-- DEVPOST -->
-		     <li>
-		     	<a href="https://devpost.com/AnupyaP" target="_blank"> 
-		     		<svg viewBox="0 0 29 29"><path d="M 6 2 L 0.625 12 L 6 22 L 18 22 L 23.457031 12 L 18 2 Z M 8 7 L 13.136719 7.007813 C 14.472656 7.195313 17 8.472656 17 12 C 17 15.527344 14.472656 16.804688 13.136719 16.988281 L 13.066406 17 L 8 17 Z M 10 9 L 10 15 L 12.914063 15 C 13.28125 14.925781 15 14.445313 15 12 C 15 9.566406 13.304688 9.078125 12.910156 9 Z"/></svg>
-		     	</a>
-		     </li>
-
-		     <!-- PRODUCTHUNT -->
-		     <li>
-		     	<a href="https://www.producthunt.com/@anupya/made" target="_blank"> 
-		     		<svg viewBox="0 0 65 65"><path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48ZM15.75 12L27.495 12.0002V12C32.1922 12 36 15.7608 36 20.4C36 25.0392 32.1922 28.8 27.495 28.8V28.8002H20.61V36H15.75V12Z"/><path d="M27.495 24V24.0002H20.61V16.8002H27.495V16.8C29.508 16.8 31.14 18.4118 31.14 20.4C31.14 22.3882 29.508 24 27.495 24Z"/>
-		     		</svg>
-		     	</a>
-		     </li>
-
-			 <!-- MEDIUM -->
-			 <li>
-				<a href="https://medium.com/@anupya" target="_blank"> 
-					<svg viewBox="0 -55 256 256"><path d="M72.2009141,1.42108547e-14 C112.076502,1.42108547e-14 144.399375,32.5485469 144.399375,72.6964154 C144.399375,112.844284 112.074049,145.390378 72.2009141,145.390378 C32.327779,145.390378 0,112.844284 0,72.6964154 C0,32.5485469 32.325326,1.42108547e-14 72.2009141,1.42108547e-14 Z M187.500628,4.25836743 C207.438422,4.25836743 223.601085,34.8960455 223.601085,72.6964154 L223.603538,72.6964154 C223.603538,110.486973 207.440875,141.134463 187.503081,141.134463 C167.565287,141.134463 151.402624,110.486973 151.402624,72.6964154 C151.402624,34.9058574 167.562834,4.25836743 187.500628,4.25836743 Z M243.303393,11.3867175 C250.314,11.3867175 256,38.835526 256,72.6964154 C256,106.547493 250.316453,134.006113 243.303393,134.006113 C236.290333,134.006113 230.609239,106.554852 230.609239,72.6964154 C230.609239,38.837979 236.292786,11.3867175 243.303393,11.3867175 Z" />
+			<!-- GITHUB -->
+			<li>
+				<a href="https://www.github.com/anupya" target="_blank">
+					<svg viewBox="0 0 512 512">
+						<path
+							d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z" />
 					</svg>
 				</a>
-			 </li>
+			</li>
 
-		     <!-- EMAIL -->
-		     <li>
-		     	<a href="mailto:anupya.developer@gmail.com" target="_blank"> 
-		     		<svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>
-		     	</a>
-		     </li>
-	    </ul>
-    </section>
+			<!-- TWITTER -->
+			<li>
+				<a href="https://twitter.com/anupyadeveloper" target="_blank">
+					<svg viewBox="0 0 512 512">
+						<path
+							d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z" />
+					</svg>
+				</a>
+			</li>
 
-    <script>
-        jQuery('.jcarousel').jcarousel({
-            wrap: 'circular',
-            animation: 1000,
-            auto: 3
-        })
-        jQuery('.jcarousel').jcarouselAutoscroll({
-        interval: 2000,
-        target: '+=1',
-        autostart: true
-        })
-        
-        $('.jcarousel').on('jcarousel:targetin', 'li', function(event, carousel)
-          {
-              var title = $(this).find('img').attr('title');
-              if(true) $('.image-caption').html(title);
-        });
+			<!-- LINKEDIN -->
+			<li>
+				<a href="https://www.linkedin.com/in/anupya" target="_blank">
+					<svg viewBox="0 0 512 512">
+						<path
+							d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z" />
+					</svg>
+				</a>
+			</li>
 
-    </script>
+			<!-- DEVPOST -->
+			<li>
+				<a href="https://devpost.com/AnupyaP" target="_blank">
+					<svg viewBox="0 0 29 29">
+						<path
+							d="M 6 2 L 0.625 12 L 6 22 L 18 22 L 23.457031 12 L 18 2 Z M 8 7 L 13.136719 7.007813 C 14.472656 7.195313 17 8.472656 17 12 C 17 15.527344 14.472656 16.804688 13.136719 16.988281 L 13.066406 17 L 8 17 Z M 10 9 L 10 15 L 12.914063 15 C 13.28125 14.925781 15 14.445313 15 12 C 15 9.566406 13.304688 9.078125 12.910156 9 Z" />
+					</svg>
+				</a>
+			</li>
+
+			<!-- PRODUCTHUNT -->
+			<li>
+				<a href="https://www.producthunt.com/@anupya" target="_blank">
+					<svg viewBox="0 0 65 65">
+						<path
+							d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48ZM15.75 12L27.495 12.0002V12C32.1922 12 36 15.7608 36 20.4C36 25.0392 32.1922 28.8 27.495 28.8V28.8002H20.61V36H15.75V12Z" />
+						<path
+							d="M27.495 24V24.0002H20.61V16.8002H27.495V16.8C29.508 16.8 31.14 18.4118 31.14 20.4C31.14 22.3882 29.508 24 27.495 24Z" />
+					</svg>
+				</a>
+			</li>
+
+			<!-- MEDIUM -->
+			<li>
+				<a href="https://medium.com/@anupya" target="_blank">
+					<svg viewBox="0 -55 256 256">
+						<path
+							d="M72.2009141,1.42108547e-14 C112.076502,1.42108547e-14 144.399375,32.5485469 144.399375,72.6964154 C144.399375,112.844284 112.074049,145.390378 72.2009141,145.390378 C32.327779,145.390378 0,112.844284 0,72.6964154 C0,32.5485469 32.325326,1.42108547e-14 72.2009141,1.42108547e-14 Z M187.500628,4.25836743 C207.438422,4.25836743 223.601085,34.8960455 223.601085,72.6964154 L223.603538,72.6964154 C223.603538,110.486973 207.440875,141.134463 187.503081,141.134463 C167.565287,141.134463 151.402624,110.486973 151.402624,72.6964154 C151.402624,34.9058574 167.562834,4.25836743 187.500628,4.25836743 Z M243.303393,11.3867175 C250.314,11.3867175 256,38.835526 256,72.6964154 C256,106.547493 250.316453,134.006113 243.303393,134.006113 C236.290333,134.006113 230.609239,106.554852 230.609239,72.6964154 C230.609239,38.837979 236.292786,11.3867175 243.303393,11.3867175 Z" />
+					</svg>
+				</a>
+			</li>
+
+			<!-- EMAIL -->
+			<li>
+				<a href="mailto:anupya.developer@gmail.com" target="_blank">
+					<svg viewBox="0 0 512 512">
+						<path
+							d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z" />
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<script>
+		jQuery('.jcarousel').jcarousel({
+			wrap: 'circular',
+			animation: 1000,
+			auto: 3
+		})
+		jQuery('.jcarousel').jcarouselAutoscroll({
+			interval: 2000,
+			target: '+=1',
+			autostart: true
+		})
+
+		$('.jcarousel').on('jcarousel:targetin', 'li', function (event, carousel) {
+			var title = $(this).find('img').attr('title');
+			if (true) $('.image-caption').html(title);
+		});
+
+	</script>
 </div>
